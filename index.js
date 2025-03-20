@@ -53,16 +53,26 @@ function parseClampValue(value) {
   };
 }
 
+function cleanNumber(str) {
+  return Number.parseFloat(
+    str
+      .toString()
+      .replace(/["']/g, '')
+      .replace(/(rem|px)/g, ''),
+  );
+}
+
+
 function generateClamp(
   minValueRem,
   maxValueRem,
   minBreakpointRem,
   maxBreakpointRem,
 ) {
-  const minSizeRemValue = Number.parseFloat(minValueRem);
-  const maxSizeRemValue = Number.parseFloat(maxValueRem);
-  const minBreakpointRemValue = Number.parseFloat(minBreakpointRem);
-  const maxBreakpointRemValue = Number.parseFloat(maxBreakpointRem);
+  const minSizeRemValue = cleanNumber(minValueRem);
+  const maxSizeRemValue = cleanNumber(maxValueRem);
+  const minBreakpointRemValue = cleanNumber(minBreakpointRem);
+  const maxBreakpointRemValue = cleanNumber(maxBreakpointRem);
 
   const slope =
     (maxSizeRemValue - minSizeRemValue) /
@@ -79,18 +89,9 @@ function generateClamp(
 }
 
 function clampPlugin({ matchUtilities, theme }) {
-  const spacing = theme('spacing');
-  const fontSizeTheme = theme('fontSize');
-  const breakpoints = theme('screens');
-
-  const cleanThemeObject = (obj) => {
-    const { __CSS_VALUES__, ...rest } = obj;
-    return rest;
-  };
-
-  const cleanSpacing = cleanThemeObject(spacing);
-  const cleanFontSizeTheme = cleanThemeObject(fontSizeTheme);
-  const cleanBreakpoints = cleanThemeObject(breakpoints);
+  const spacing = theme('spacing', {});
+  const fontSizeTheme = theme('fontSize', {});
+  const breakpoints = theme('screens', {});
 
   matchUtilities(
     {
@@ -118,12 +119,12 @@ function clampPlugin({ matchUtilities, theme }) {
         const cssProperties = propertyMap[propertyKey] || [];
 
         if (propertyKey === 'text') {
-          const fontSizeMin = cleanFontSizeTheme[minValue]?.[0];
-          const fontSizeMax = cleanFontSizeTheme[maxValue]?.[0];
-          const lineHeightMin = cleanFontSizeTheme[minValue]?.[1]?.lineHeight;
-          const lineHeightMax = cleanFontSizeTheme[maxValue]?.[1]?.lineHeight;
-          const minBreakpointRem = cleanBreakpoints[minBreakpoint];
-          const maxBreakpointRem = cleanBreakpoints[maxBreakpoint];
+          const fontSizeMin = fontSizeTheme[minValue]?.[0];
+          const fontSizeMax = fontSizeTheme[maxValue]?.[0];
+          const lineHeightMin = fontSizeTheme[minValue]?.[1]?.lineHeight;
+          const lineHeightMax = fontSizeTheme[maxValue]?.[1]?.lineHeight;
+          const minBreakpointRem = breakpoints[minBreakpoint];
+          const maxBreakpointRem = breakpoints[maxBreakpoint];
 
           if (
             !fontSizeMin ||
@@ -155,10 +156,10 @@ function clampPlugin({ matchUtilities, theme }) {
             lineHeight: lineHeightClamp,
           };
         }
-        const minValueRem = cleanSpacing[minValue];
-        const maxValueRem = cleanSpacing[maxValue];
-        const minBreakpointRem = cleanBreakpoints[minBreakpoint];
-        const maxBreakpointRem = cleanBreakpoints[maxBreakpoint];
+        const minValueRem = spacing[minValue];
+        const maxValueRem = spacing[maxValue];
+        const minBreakpointRem = breakpoints[minBreakpoint];
+        const maxBreakpointRem = breakpoints[maxBreakpoint];
 
         if (
           !minValueRem ||
