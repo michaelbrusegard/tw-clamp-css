@@ -1,36 +1,23 @@
 {
-  "name": "tailwind-clamp-plugin",
-  "version": "1.0.1",
-  "main": "index.js",
+  "name": "tw-clamp-css",
+  "version": "1.0.2",
+  "description": "TailwindCSS v4.0 compatible CSS clamp()",
+  "main": "src/tw-clamp.css",
   "type": "module",
-  "files": [
-    "index.js",
-    "index.d.ts"
-  ],
   "keywords": [
     "tailwind",
     "tailwindcss",
     "css",
-    "postcss",
     "plugin",
-    "animation",
-    "transition",
-    "animate",
-    "animated",
-    "animatecss",
-    "animate.css",
-    "fade",
-    "slide",
-    "zoom",
-    "spin",
-    "opacity",
-    "transform",
-    "translate",
-    "scale"
+    "clamp"
   ],
   "author": "Michael Brusegard",
   "license": "MIT",
+  "scripts": {
+    "generate": "node ./src/index.js"
+  },
   "devDependencies": {
     "tailwindcss": "^4.0.14"
-  }
+  },
+  "packageManager": "pnpm@10.6.3"
 }
