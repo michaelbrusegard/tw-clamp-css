@@ -125,8 +125,8 @@ function generateFontSizeClamps() {
 
       const minValue = parseFloat(minSize);
       const maxValue = parseFloat(maxSize);
-      const minLineHeightValue = parseFloat(minLineHeight.lineHeight);
-      const maxLineHeightValue = parseFloat(maxLineHeight.lineHeight);
+      const minLineHeightValue = minValue * parseFloat(minLineHeight.lineHeight);
+      const maxLineHeightValue = maxValue * parseFloat(maxLineHeight.lineHeight);
 
       // Default clamp (sm to xl)
       const defaultSizeClamp = generateClamp(
@@ -136,8 +136,8 @@ function generateFontSizeClamps() {
         defaultMaxBreakpoint,
       );
       const defaultLineHeightClamp = generateClamp(
-        maxLineHeightValue,
         minLineHeightValue,
+        maxLineHeightValue,
         defaultMinBreakpoint,
         defaultMaxBreakpoint,
       );
