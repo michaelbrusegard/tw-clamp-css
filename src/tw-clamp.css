@@ -10,7 +10,7 @@
   /* text */
 
   --text-xs-sm-clamp: clamp(0.75rem, calc(0.75rem + 0.00313 * (100vw - 40rem)), 0.875rem);
-  --text-xs-sm-clamp--line-height: clamp(1.33333rem, calc(1.33333rem + 0.00238 * (100vw - 40rem)), 1.42857rem);
+  --text-xs-sm-clamp--line-height: clamp(1.33333rem, calc(1.42857rem + -0.00238 * (100vw - 40rem)), 1.42857rem);
   --text-xs-sm-clamp-2xs: clamp(0.75rem, calc(0.75rem + 0.00223 * (100vw - 24rem)), 0.875rem);
   --text-xs-sm-clamp-2xs--line-height: clamp(1.33333rem, calc(1.33333rem + 0.00170 * (100vw - 24rem)), 1.42857rem);
   --text-xs-sm-clamp-xs: clamp(0.75rem, calc(0.75rem + 0.00260 * (100vw - 32rem)), 0.875rem);
@@ -52,7 +52,7 @@
   --text-xs-sm-clamp-xl-2xl: clamp(0.75rem, calc(0.75rem + 0.00781 * (100vw - 80rem)), 0.875rem);
   --text-xs-sm-clamp-xl-2xl--line-height: clamp(1.33333rem, calc(1.33333rem + 0.00595 * (100vw - 80rem)), 1.42857rem);
   --text-xs-base-clamp: clamp(0.75rem, calc(0.75rem + 0.00625 * (100vw - 40rem)), 1rem);
-  --text-xs-base-clamp--line-height: clamp(1.33333rem, calc(1.33333rem + 0.00417 * (100vw - 40rem)), 1.5rem);
+  --text-xs-base-clamp--line-height: clamp(1.33333rem, calc(1.5rem + -0.00417 * (100vw - 40rem)), 1.5rem);
   --text-xs-base-clamp-2xs: clamp(0.75rem, calc(0.75rem + 0.00446 * (100vw - 24rem)), 1rem);
   --text-xs-base-clamp-2xs--line-height: clamp(1.33333rem, calc(1.33333rem + 0.00298 * (100vw - 24rem)), 1.5rem);
   --text-xs-base-clamp-xs: clamp(0.75rem, calc(0.75rem + 0.00521 * (100vw - 32rem)), 1rem);
@@ -94,7 +94,7 @@
   --text-xs-base-clamp-xl-2xl: clamp(0.75rem, calc(0.75rem + 0.01563 * (100vw - 80rem)), 1rem);
   --text-xs-base-clamp-xl-2xl--line-height: clamp(1.33333rem, calc(1.33333rem + 0.01042 * (100vw - 80rem)), 1.5rem);
   --text-xs-lg-clamp: clamp(0.75rem, calc(0.75rem + 0.00937 * (100vw - 40rem)), 1.125rem);
-  --text-xs-lg-clamp--line-height: clamp(1.33333rem, calc(1.33333rem + 0.00556 * (100vw - 40rem)), 1.55555rem);
+  --text-xs-lg-clamp--line-height: clamp(1.33333rem, calc(1.55555rem + -0.00556 * (100vw - 40rem)), 1.55555rem);
   --text-xs-lg-clamp-2xs: clamp(0.75rem, calc(0.75rem + 0.00670 * (100vw - 24rem)), 1.125rem);
   --text-xs-lg-clamp-2xs--line-height: clamp(1.33333rem, calc(1.33333rem + 0.00397 * (100vw - 24rem)), 1.55555rem);
   --text-xs-lg-clamp-xs: clamp(0.75rem, calc(0.75rem + 0.00781 * (100vw - 32rem)), 1.125rem);
@@ -136,7 +136,7 @@
   --text-xs-lg-clamp-xl-2xl: clamp(0.75rem, calc(0.75rem + 0.02344 * (100vw - 80rem)), 1.125rem);
   --text-xs-lg-clamp-xl-2xl--line-height: clamp(1.33333rem, calc(1.33333rem + 0.01389 * (100vw - 80rem)), 1.55555rem);
   --text-xs-xl-clamp: clamp(0.75rem, calc(0.75rem + 0.01250 * (100vw - 40rem)), 1.25rem);
-  --text-xs-xl-clamp--line-height: clamp(1.33333rem, calc(1.33333rem + 0.00167 * (100vw - 40rem)), 1.4rem);
+  --text-xs-xl-clamp--line-height: clamp(1.33333rem, calc(1.4rem + -0.00167 * (100vw - 40rem)), 1.4rem);
   --text-xs-xl-clamp-2xs: clamp(0.75rem, calc(0.75rem + 0.00893 * (100vw - 24rem)), 1.25rem);
   --text-xs-xl-clamp-2xs--line-height: clamp(1.33333rem, calc(1.33333rem + 0.00119 * (100vw - 24rem)), 1.4rem);
   --text-xs-xl-clamp-xs: clamp(0.75rem, calc(0.75rem + 0.01042 * (100vw - 32rem)), 1.25rem);
@@ -220,7 +220,7 @@
   --text-xs-2xl-clamp-xl-2xl: clamp(0.75rem, calc(0.75rem + 0.04688 * (100vw - 80rem)), 1.5rem);
   --text-xs-2xl-clamp-xl-2xl--line-height: clamp(1.33333rem, calc(1.33333rem + 0.00000 * (100vw - 80rem)), 1.33333rem);
   --text-xs-3xl-clamp: clamp(0.75rem, calc(0.75rem + 0.02813 * (100vw - 40rem)), 1.875rem);
-  --text-xs-3xl-clamp--line-height: clamp(1.2rem, calc(1.33333rem + -0.00333 * (100vw - 40rem)), 1.33333rem);
+  --text-xs-3xl-clamp--line-height: clamp(1.2rem, calc(1.2rem + 0.00333 * (100vw - 40rem)), 1.33333rem);
   --text-xs-3xl-clamp-2xs: clamp(0.75rem, calc(0.75rem + 0.02009 * (100vw - 24rem)), 1.875rem);
   --text-xs-3xl-clamp-2xs--line-height: clamp(1.2rem, calc(1.33333rem + -0.00238 * (100vw - 24rem)), 1.33333rem);
   --text-xs-3xl-clamp-xs: clamp(0.75rem, calc(0.75rem + 0.02344 * (100vw - 32rem)), 1.875rem);
@@ -262,7 +262,7 @@
   --text-xs-3xl-clamp-xl-2xl: clamp(0.75rem, calc(0.75rem + 0.07031 * (100vw - 80rem)), 1.875rem);
   --text-xs-3xl-clamp-xl-2xl--line-height: clamp(1.2rem, calc(1.33333rem + -0.00833 * (100vw - 80rem)), 1.33333rem);
   --text-xs-4xl-clamp: clamp(0.75rem, calc(0.75rem + 0.03750 * (100vw - 40rem)), 2.25rem);
-  --text-xs-4xl-clamp--line-height: clamp(1.11111rem, calc(1.33333rem + -0.00556 * (100vw - 40rem)), 1.33333rem);
+  --text-xs-4xl-clamp--line-height: clamp(1.11111rem, calc(1.11111rem + 0.00556 * (100vw - 40rem)), 1.33333rem);
   --text-xs-4xl-clamp-2xs: clamp(0.75rem, calc(0.75rem + 0.02679 * (100vw - 24rem)), 2.25rem);
   --text-xs-4xl-clamp-2xs--line-height: clamp(1.11111rem, calc(1.33333rem + -0.00397 * (100vw - 24rem)), 1.33333rem);
   --text-xs-4xl-clamp-xs: clamp(0.75rem, calc(0.75rem + 0.03125 * (100vw - 32rem)), 2.25rem);
@@ -304,7 +304,7 @@
   --text-xs-4xl-clamp-xl-2xl: clamp(0.75rem, calc(0.75rem + 0.09375 * (100vw - 80rem)), 2.25rem);
   --text-xs-4xl-clamp-xl-2xl--line-height: clamp(1.11111rem, calc(1.33333rem + -0.01389 * (100vw - 80rem)), 1.33333rem);
   --text-xs-5xl-clamp: clamp(0.75rem, calc(0.75rem + 0.05625 * (100vw - 40rem)), 3rem);
-  --text-xs-5xl-clamp--line-height: clamp(1rem, calc(1.33333rem + -0.00833 * (100vw - 40rem)), 1.33333rem);
+  --text-xs-5xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00833 * (100vw - 40rem)), 1.33333rem);
   --text-xs-5xl-clamp-2xs: clamp(0.75rem, calc(0.75rem + 0.04018 * (100vw - 24rem)), 3rem);
   --text-xs-5xl-clamp-2xs--line-height: clamp(1rem, calc(1.33333rem + -0.00595 * (100vw - 24rem)), 1.33333rem);
   --text-xs-5xl-clamp-xs: clamp(0.75rem, calc(0.75rem + 0.04688 * (100vw - 32rem)), 3rem);
@@ -346,7 +346,7 @@
   --text-xs-5xl-clamp-xl-2xl: clamp(0.75rem, calc(0.75rem + 0.14063 * (100vw - 80rem)), 3rem);
   --text-xs-5xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.33333rem + -0.02083 * (100vw - 80rem)), 1.33333rem);
   --text-xs-6xl-clamp: clamp(0.75rem, calc(0.75rem + 0.07500 * (100vw - 40rem)), 3.75rem);
-  --text-xs-6xl-clamp--line-height: clamp(1rem, calc(1.33333rem + -0.00833 * (100vw - 40rem)), 1.33333rem);
+  --text-xs-6xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00833 * (100vw - 40rem)), 1.33333rem);
   --text-xs-6xl-clamp-2xs: clamp(0.75rem, calc(0.75rem + 0.05357 * (100vw - 24rem)), 3.75rem);
   --text-xs-6xl-clamp-2xs--line-height: clamp(1rem, calc(1.33333rem + -0.00595 * (100vw - 24rem)), 1.33333rem);
   --text-xs-6xl-clamp-xs: clamp(0.75rem, calc(0.75rem + 0.06250 * (100vw - 32rem)), 3.75rem);
@@ -388,7 +388,7 @@
   --text-xs-6xl-clamp-xl-2xl: clamp(0.75rem, calc(0.75rem + 0.18750 * (100vw - 80rem)), 3.75rem);
   --text-xs-6xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.33333rem + -0.02083 * (100vw - 80rem)), 1.33333rem);
   --text-xs-7xl-clamp: clamp(0.75rem, calc(0.75rem + 0.09375 * (100vw - 40rem)), 4.5rem);
-  --text-xs-7xl-clamp--line-height: clamp(1rem, calc(1.33333rem + -0.00833 * (100vw - 40rem)), 1.33333rem);
+  --text-xs-7xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00833 * (100vw - 40rem)), 1.33333rem);
   --text-xs-7xl-clamp-2xs: clamp(0.75rem, calc(0.75rem + 0.06696 * (100vw - 24rem)), 4.5rem);
   --text-xs-7xl-clamp-2xs--line-height: clamp(1rem, calc(1.33333rem + -0.00595 * (100vw - 24rem)), 1.33333rem);
   --text-xs-7xl-clamp-xs: clamp(0.75rem, calc(0.75rem + 0.07813 * (100vw - 32rem)), 4.5rem);
@@ -430,7 +430,7 @@
   --text-xs-7xl-clamp-xl-2xl: clamp(0.75rem, calc(0.75rem + 0.23438 * (100vw - 80rem)), 4.5rem);
   --text-xs-7xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.33333rem + -0.02083 * (100vw - 80rem)), 1.33333rem);
   --text-xs-8xl-clamp: clamp(0.75rem, calc(0.75rem + 0.13125 * (100vw - 40rem)), 6rem);
-  --text-xs-8xl-clamp--line-height: clamp(1rem, calc(1.33333rem + -0.00833 * (100vw - 40rem)), 1.33333rem);
+  --text-xs-8xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00833 * (100vw - 40rem)), 1.33333rem);
   --text-xs-8xl-clamp-2xs: clamp(0.75rem, calc(0.75rem + 0.09375 * (100vw - 24rem)), 6rem);
   --text-xs-8xl-clamp-2xs--line-height: clamp(1rem, calc(1.33333rem + -0.00595 * (100vw - 24rem)), 1.33333rem);
   --text-xs-8xl-clamp-xs: clamp(0.75rem, calc(0.75rem + 0.10938 * (100vw - 32rem)), 6rem);
@@ -472,7 +472,7 @@
   --text-xs-8xl-clamp-xl-2xl: clamp(0.75rem, calc(0.75rem + 0.32813 * (100vw - 80rem)), 6rem);
   --text-xs-8xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.33333rem + -0.02083 * (100vw - 80rem)), 1.33333rem);
   --text-xs-9xl-clamp: clamp(0.75rem, calc(0.75rem + 0.18125 * (100vw - 40rem)), 8rem);
-  --text-xs-9xl-clamp--line-height: clamp(1rem, calc(1.33333rem + -0.00833 * (100vw - 40rem)), 1.33333rem);
+  --text-xs-9xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00833 * (100vw - 40rem)), 1.33333rem);
   --text-xs-9xl-clamp-2xs: clamp(0.75rem, calc(0.75rem + 0.12946 * (100vw - 24rem)), 8rem);
   --text-xs-9xl-clamp-2xs--line-height: clamp(1rem, calc(1.33333rem + -0.00595 * (100vw - 24rem)), 1.33333rem);
   --text-xs-9xl-clamp-xs: clamp(0.75rem, calc(0.75rem + 0.15104 * (100vw - 32rem)), 8rem);
@@ -514,7 +514,7 @@
   --text-xs-9xl-clamp-xl-2xl: clamp(0.75rem, calc(0.75rem + 0.45313 * (100vw - 80rem)), 8rem);
   --text-xs-9xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.33333rem + -0.02083 * (100vw - 80rem)), 1.33333rem);
   --text-sm-base-clamp: clamp(0.875rem, calc(0.875rem + 0.00313 * (100vw - 40rem)), 1rem);
-  --text-sm-base-clamp--line-height: clamp(1.42857rem, calc(1.42857rem + 0.00179 * (100vw - 40rem)), 1.5rem);
+  --text-sm-base-clamp--line-height: clamp(1.42857rem, calc(1.5rem + -0.00179 * (100vw - 40rem)), 1.5rem);
   --text-sm-base-clamp-2xs: clamp(0.875rem, calc(0.875rem + 0.00223 * (100vw - 24rem)), 1rem);
   --text-sm-base-clamp-2xs--line-height: clamp(1.42857rem, calc(1.42857rem + 0.00128 * (100vw - 24rem)), 1.5rem);
   --text-sm-base-clamp-xs: clamp(0.875rem, calc(0.875rem + 0.00260 * (100vw - 32rem)), 1rem);
@@ -556,7 +556,7 @@
   --text-sm-base-clamp-xl-2xl: clamp(0.875rem, calc(0.875rem + 0.00781 * (100vw - 80rem)), 1rem);
   --text-sm-base-clamp-xl-2xl--line-height: clamp(1.42857rem, calc(1.42857rem + 0.00446 * (100vw - 80rem)), 1.5rem);
   --text-sm-lg-clamp: clamp(0.875rem, calc(0.875rem + 0.00625 * (100vw - 40rem)), 1.125rem);
-  --text-sm-lg-clamp--line-height: clamp(1.42857rem, calc(1.42857rem + 0.00317 * (100vw - 40rem)), 1.55555rem);
+  --text-sm-lg-clamp--line-height: clamp(1.42857rem, calc(1.55555rem + -0.00317 * (100vw - 40rem)), 1.55555rem);
   --text-sm-lg-clamp-2xs: clamp(0.875rem, calc(0.875rem + 0.00446 * (100vw - 24rem)), 1.125rem);
   --text-sm-lg-clamp-2xs--line-height: clamp(1.42857rem, calc(1.42857rem + 0.00227 * (100vw - 24rem)), 1.55555rem);
   --text-sm-lg-clamp-xs: clamp(0.875rem, calc(0.875rem + 0.00521 * (100vw - 32rem)), 1.125rem);
@@ -598,7 +598,7 @@
   --text-sm-lg-clamp-xl-2xl: clamp(0.875rem, calc(0.875rem + 0.01563 * (100vw - 80rem)), 1.125rem);
   --text-sm-lg-clamp-xl-2xl--line-height: clamp(1.42857rem, calc(1.42857rem + 0.00794 * (100vw - 80rem)), 1.55555rem);
   --text-sm-xl-clamp: clamp(0.875rem, calc(0.875rem + 0.00937 * (100vw - 40rem)), 1.25rem);
-  --text-sm-xl-clamp--line-height: clamp(1.4rem, calc(1.42857rem + -0.00071 * (100vw - 40rem)), 1.42857rem);
+  --text-sm-xl-clamp--line-height: clamp(1.4rem, calc(1.4rem + 0.00071 * (100vw - 40rem)), 1.42857rem);
   --text-sm-xl-clamp-2xs: clamp(0.875rem, calc(0.875rem + 0.00670 * (100vw - 24rem)), 1.25rem);
   --text-sm-xl-clamp-2xs--line-height: clamp(1.4rem, calc(1.42857rem + -0.00051 * (100vw - 24rem)), 1.42857rem);
   --text-sm-xl-clamp-xs: clamp(0.875rem, calc(0.875rem + 0.00781 * (100vw - 32rem)), 1.25rem);
@@ -640,7 +640,7 @@
   --text-sm-xl-clamp-xl-2xl: clamp(0.875rem, calc(0.875rem + 0.02344 * (100vw - 80rem)), 1.25rem);
   --text-sm-xl-clamp-xl-2xl--line-height: clamp(1.4rem, calc(1.42857rem + -0.00179 * (100vw - 80rem)), 1.42857rem);
   --text-sm-2xl-clamp: clamp(0.875rem, calc(0.875rem + 0.01563 * (100vw - 40rem)), 1.5rem);
-  --text-sm-2xl-clamp--line-height: clamp(1.33333rem, calc(1.42857rem + -0.00238 * (100vw - 40rem)), 1.42857rem);
+  --text-sm-2xl-clamp--line-height: clamp(1.33333rem, calc(1.33333rem + 0.00238 * (100vw - 40rem)), 1.42857rem);
   --text-sm-2xl-clamp-2xs: clamp(0.875rem, calc(0.875rem + 0.01116 * (100vw - 24rem)), 1.5rem);
   --text-sm-2xl-clamp-2xs--line-height: clamp(1.33333rem, calc(1.42857rem + -0.00170 * (100vw - 24rem)), 1.42857rem);
   --text-sm-2xl-clamp-xs: clamp(0.875rem, calc(0.875rem + 0.01302 * (100vw - 32rem)), 1.5rem);
@@ -682,7 +682,7 @@
   --text-sm-2xl-clamp-xl-2xl: clamp(0.875rem, calc(0.875rem + 0.03906 * (100vw - 80rem)), 1.5rem);
   --text-sm-2xl-clamp-xl-2xl--line-height: clamp(1.33333rem, calc(1.42857rem + -0.00595 * (100vw - 80rem)), 1.42857rem);
   --text-sm-3xl-clamp: clamp(0.875rem, calc(0.875rem + 0.02500 * (100vw - 40rem)), 1.875rem);
-  --text-sm-3xl-clamp--line-height: clamp(1.2rem, calc(1.42857rem + -0.00571 * (100vw - 40rem)), 1.42857rem);
+  --text-sm-3xl-clamp--line-height: clamp(1.2rem, calc(1.2rem + 0.00571 * (100vw - 40rem)), 1.42857rem);
   --text-sm-3xl-clamp-2xs: clamp(0.875rem, calc(0.875rem + 0.01786 * (100vw - 24rem)), 1.875rem);
   --text-sm-3xl-clamp-2xs--line-height: clamp(1.2rem, calc(1.42857rem + -0.00408 * (100vw - 24rem)), 1.42857rem);
   --text-sm-3xl-clamp-xs: clamp(0.875rem, calc(0.875rem + 0.02083 * (100vw - 32rem)), 1.875rem);
@@ -724,7 +724,7 @@
   --text-sm-3xl-clamp-xl-2xl: clamp(0.875rem, calc(0.875rem + 0.06250 * (100vw - 80rem)), 1.875rem);
   --text-sm-3xl-clamp-xl-2xl--line-height: clamp(1.2rem, calc(1.42857rem + -0.01429 * (100vw - 80rem)), 1.42857rem);
   --text-sm-4xl-clamp: clamp(0.875rem, calc(0.875rem + 0.03438 * (100vw - 40rem)), 2.25rem);
-  --text-sm-4xl-clamp--line-height: clamp(1.11111rem, calc(1.42857rem + -0.00794 * (100vw - 40rem)), 1.42857rem);
+  --text-sm-4xl-clamp--line-height: clamp(1.11111rem, calc(1.11111rem + 0.00794 * (100vw - 40rem)), 1.42857rem);
   --text-sm-4xl-clamp-2xs: clamp(0.875rem, calc(0.875rem + 0.02455 * (100vw - 24rem)), 2.25rem);
   --text-sm-4xl-clamp-2xs--line-height: clamp(1.11111rem, calc(1.42857rem + -0.00567 * (100vw - 24rem)), 1.42857rem);
   --text-sm-4xl-clamp-xs: clamp(0.875rem, calc(0.875rem + 0.02865 * (100vw - 32rem)), 2.25rem);
@@ -766,7 +766,7 @@
   --text-sm-4xl-clamp-xl-2xl: clamp(0.875rem, calc(0.875rem + 0.08594 * (100vw - 80rem)), 2.25rem);
   --text-sm-4xl-clamp-xl-2xl--line-height: clamp(1.11111rem, calc(1.42857rem + -0.01984 * (100vw - 80rem)), 1.42857rem);
   --text-sm-5xl-clamp: clamp(0.875rem, calc(0.875rem + 0.05312 * (100vw - 40rem)), 3rem);
-  --text-sm-5xl-clamp--line-height: clamp(1rem, calc(1.42857rem + -0.01071 * (100vw - 40rem)), 1.42857rem);
+  --text-sm-5xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01071 * (100vw - 40rem)), 1.42857rem);
   --text-sm-5xl-clamp-2xs: clamp(0.875rem, calc(0.875rem + 0.03795 * (100vw - 24rem)), 3rem);
   --text-sm-5xl-clamp-2xs--line-height: clamp(1rem, calc(1.42857rem + -0.00765 * (100vw - 24rem)), 1.42857rem);
   --text-sm-5xl-clamp-xs: clamp(0.875rem, calc(0.875rem + 0.04427 * (100vw - 32rem)), 3rem);
@@ -808,7 +808,7 @@
   --text-sm-5xl-clamp-xl-2xl: clamp(0.875rem, calc(0.875rem + 0.13281 * (100vw - 80rem)), 3rem);
   --text-sm-5xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.42857rem + -0.02679 * (100vw - 80rem)), 1.42857rem);
   --text-sm-6xl-clamp: clamp(0.875rem, calc(0.875rem + 0.07187 * (100vw - 40rem)), 3.75rem);
-  --text-sm-6xl-clamp--line-height: clamp(1rem, calc(1.42857rem + -0.01071 * (100vw - 40rem)), 1.42857rem);
+  --text-sm-6xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01071 * (100vw - 40rem)), 1.42857rem);
   --text-sm-6xl-clamp-2xs: clamp(0.875rem, calc(0.875rem + 0.05134 * (100vw - 24rem)), 3.75rem);
   --text-sm-6xl-clamp-2xs--line-height: clamp(1rem, calc(1.42857rem + -0.00765 * (100vw - 24rem)), 1.42857rem);
   --text-sm-6xl-clamp-xs: clamp(0.875rem, calc(0.875rem + 0.05990 * (100vw - 32rem)), 3.75rem);
@@ -850,7 +850,7 @@
   --text-sm-6xl-clamp-xl-2xl: clamp(0.875rem, calc(0.875rem + 0.17969 * (100vw - 80rem)), 3.75rem);
   --text-sm-6xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.42857rem + -0.02679 * (100vw - 80rem)), 1.42857rem);
   --text-sm-7xl-clamp: clamp(0.875rem, calc(0.875rem + 0.09062 * (100vw - 40rem)), 4.5rem);
-  --text-sm-7xl-clamp--line-height: clamp(1rem, calc(1.42857rem + -0.01071 * (100vw - 40rem)), 1.42857rem);
+  --text-sm-7xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01071 * (100vw - 40rem)), 1.42857rem);
   --text-sm-7xl-clamp-2xs: clamp(0.875rem, calc(0.875rem + 0.06473 * (100vw - 24rem)), 4.5rem);
   --text-sm-7xl-clamp-2xs--line-height: clamp(1rem, calc(1.42857rem + -0.00765 * (100vw - 24rem)), 1.42857rem);
   --text-sm-7xl-clamp-xs: clamp(0.875rem, calc(0.875rem + 0.07552 * (100vw - 32rem)), 4.5rem);
@@ -892,7 +892,7 @@
   --text-sm-7xl-clamp-xl-2xl: clamp(0.875rem, calc(0.875rem + 0.22656 * (100vw - 80rem)), 4.5rem);
   --text-sm-7xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.42857rem + -0.02679 * (100vw - 80rem)), 1.42857rem);
   --text-sm-8xl-clamp: clamp(0.875rem, calc(0.875rem + 0.12812 * (100vw - 40rem)), 6rem);
-  --text-sm-8xl-clamp--line-height: clamp(1rem, calc(1.42857rem + -0.01071 * (100vw - 40rem)), 1.42857rem);
+  --text-sm-8xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01071 * (100vw - 40rem)), 1.42857rem);
   --text-sm-8xl-clamp-2xs: clamp(0.875rem, calc(0.875rem + 0.09152 * (100vw - 24rem)), 6rem);
   --text-sm-8xl-clamp-2xs--line-height: clamp(1rem, calc(1.42857rem + -0.00765 * (100vw - 24rem)), 1.42857rem);
   --text-sm-8xl-clamp-xs: clamp(0.875rem, calc(0.875rem + 0.10677 * (100vw - 32rem)), 6rem);
@@ -934,7 +934,7 @@
   --text-sm-8xl-clamp-xl-2xl: clamp(0.875rem, calc(0.875rem + 0.32031 * (100vw - 80rem)), 6rem);
   --text-sm-8xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.42857rem + -0.02679 * (100vw - 80rem)), 1.42857rem);
   --text-sm-9xl-clamp: clamp(0.875rem, calc(0.875rem + 0.17813 * (100vw - 40rem)), 8rem);
-  --text-sm-9xl-clamp--line-height: clamp(1rem, calc(1.42857rem + -0.01071 * (100vw - 40rem)), 1.42857rem);
+  --text-sm-9xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01071 * (100vw - 40rem)), 1.42857rem);
   --text-sm-9xl-clamp-2xs: clamp(0.875rem, calc(0.875rem + 0.12723 * (100vw - 24rem)), 8rem);
   --text-sm-9xl-clamp-2xs--line-height: clamp(1rem, calc(1.42857rem + -0.00765 * (100vw - 24rem)), 1.42857rem);
   --text-sm-9xl-clamp-xs: clamp(0.875rem, calc(0.875rem + 0.14844 * (100vw - 32rem)), 8rem);
@@ -976,7 +976,7 @@
   --text-sm-9xl-clamp-xl-2xl: clamp(0.875rem, calc(0.875rem + 0.44531 * (100vw - 80rem)), 8rem);
   --text-sm-9xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.42857rem + -0.02679 * (100vw - 80rem)), 1.42857rem);
   --text-base-lg-clamp: clamp(1rem, calc(1rem + 0.00313 * (100vw - 40rem)), 1.125rem);
-  --text-base-lg-clamp--line-height: clamp(1.5rem, calc(1.5rem + 0.00139 * (100vw - 40rem)), 1.55555rem);
+  --text-base-lg-clamp--line-height: clamp(1.5rem, calc(1.55555rem + -0.00139 * (100vw - 40rem)), 1.55555rem);
   --text-base-lg-clamp-2xs: clamp(1rem, calc(1rem + 0.00223 * (100vw - 24rem)), 1.125rem);
   --text-base-lg-clamp-2xs--line-height: clamp(1.5rem, calc(1.5rem + 0.00099 * (100vw - 24rem)), 1.55555rem);
   --text-base-lg-clamp-xs: clamp(1rem, calc(1rem + 0.00260 * (100vw - 32rem)), 1.125rem);
@@ -1018,7 +1018,7 @@
   --text-base-lg-clamp-xl-2xl: clamp(1rem, calc(1rem + 0.00781 * (100vw - 80rem)), 1.125rem);
   --text-base-lg-clamp-xl-2xl--line-height: clamp(1.5rem, calc(1.5rem + 0.00347 * (100vw - 80rem)), 1.55555rem);
   --text-base-xl-clamp: clamp(1rem, calc(1rem + 0.00625 * (100vw - 40rem)), 1.25rem);
-  --text-base-xl-clamp--line-height: clamp(1.4rem, calc(1.5rem + -0.00250 * (100vw - 40rem)), 1.5rem);
+  --text-base-xl-clamp--line-height: clamp(1.4rem, calc(1.4rem + 0.00250 * (100vw - 40rem)), 1.5rem);
   --text-base-xl-clamp-2xs: clamp(1rem, calc(1rem + 0.00446 * (100vw - 24rem)), 1.25rem);
   --text-base-xl-clamp-2xs--line-height: clamp(1.4rem, calc(1.5rem + -0.00179 * (100vw - 24rem)), 1.5rem);
   --text-base-xl-clamp-xs: clamp(1rem, calc(1rem + 0.00521 * (100vw - 32rem)), 1.25rem);
@@ -1060,7 +1060,7 @@
   --text-base-xl-clamp-xl-2xl: clamp(1rem, calc(1rem + 0.01563 * (100vw - 80rem)), 1.25rem);
   --text-base-xl-clamp-xl-2xl--line-height: clamp(1.4rem, calc(1.5rem + -0.00625 * (100vw - 80rem)), 1.5rem);
   --text-base-2xl-clamp: clamp(1rem, calc(1rem + 0.01250 * (100vw - 40rem)), 1.5rem);
-  --text-base-2xl-clamp--line-height: clamp(1.33333rem, calc(1.5rem + -0.00417 * (100vw - 40rem)), 1.5rem);
+  --text-base-2xl-clamp--line-height: clamp(1.33333rem, calc(1.33333rem + 0.00417 * (100vw - 40rem)), 1.5rem);
   --text-base-2xl-clamp-2xs: clamp(1rem, calc(1rem + 0.00893 * (100vw - 24rem)), 1.5rem);
   --text-base-2xl-clamp-2xs--line-height: clamp(1.33333rem, calc(1.5rem + -0.00298 * (100vw - 24rem)), 1.5rem);
   --text-base-2xl-clamp-xs: clamp(1rem, calc(1rem + 0.01042 * (100vw - 32rem)), 1.5rem);
@@ -1102,7 +1102,7 @@
   --text-base-2xl-clamp-xl-2xl: clamp(1rem, calc(1rem + 0.03125 * (100vw - 80rem)), 1.5rem);
   --text-base-2xl-clamp-xl-2xl--line-height: clamp(1.33333rem, calc(1.5rem + -0.01042 * (100vw - 80rem)), 1.5rem);
   --text-base-3xl-clamp: clamp(1rem, calc(1rem + 0.02187 * (100vw - 40rem)), 1.875rem);
-  --text-base-3xl-clamp--line-height: clamp(1.2rem, calc(1.5rem + -0.00750 * (100vw - 40rem)), 1.5rem);
+  --text-base-3xl-clamp--line-height: clamp(1.2rem, calc(1.2rem + 0.00750 * (100vw - 40rem)), 1.5rem);
   --text-base-3xl-clamp-2xs: clamp(1rem, calc(1rem + 0.01563 * (100vw - 24rem)), 1.875rem);
   --text-base-3xl-clamp-2xs--line-height: clamp(1.2rem, calc(1.5rem + -0.00536 * (100vw - 24rem)), 1.5rem);
   --text-base-3xl-clamp-xs: clamp(1rem, calc(1rem + 0.01823 * (100vw - 32rem)), 1.875rem);
@@ -1144,7 +1144,7 @@
   --text-base-3xl-clamp-xl-2xl: clamp(1rem, calc(1rem + 0.05469 * (100vw - 80rem)), 1.875rem);
   --text-base-3xl-clamp-xl-2xl--line-height: clamp(1.2rem, calc(1.5rem + -0.01875 * (100vw - 80rem)), 1.5rem);
   --text-base-4xl-clamp: clamp(1rem, calc(1rem + 0.03125 * (100vw - 40rem)), 2.25rem);
-  --text-base-4xl-clamp--line-height: clamp(1.11111rem, calc(1.5rem + -0.00972 * (100vw - 40rem)), 1.5rem);
+  --text-base-4xl-clamp--line-height: clamp(1.11111rem, calc(1.11111rem + 0.00972 * (100vw - 40rem)), 1.5rem);
   --text-base-4xl-clamp-2xs: clamp(1rem, calc(1rem + 0.02232 * (100vw - 24rem)), 2.25rem);
   --text-base-4xl-clamp-2xs--line-height: clamp(1.11111rem, calc(1.5rem + -0.00694 * (100vw - 24rem)), 1.5rem);
   --text-base-4xl-clamp-xs: clamp(1rem, calc(1rem + 0.02604 * (100vw - 32rem)), 2.25rem);
@@ -1186,7 +1186,7 @@
   --text-base-4xl-clamp-xl-2xl: clamp(1rem, calc(1rem + 0.07813 * (100vw - 80rem)), 2.25rem);
   --text-base-4xl-clamp-xl-2xl--line-height: clamp(1.11111rem, calc(1.5rem + -0.02431 * (100vw - 80rem)), 1.5rem);
   --text-base-5xl-clamp: clamp(1rem, calc(1rem + 0.05000 * (100vw - 40rem)), 3rem);
-  --text-base-5xl-clamp--line-height: clamp(1rem, calc(1.5rem + -0.01250 * (100vw - 40rem)), 1.5rem);
+  --text-base-5xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01250 * (100vw - 40rem)), 1.5rem);
   --text-base-5xl-clamp-2xs: clamp(1rem, calc(1rem + 0.03571 * (100vw - 24rem)), 3rem);
   --text-base-5xl-clamp-2xs--line-height: clamp(1rem, calc(1.5rem + -0.00893 * (100vw - 24rem)), 1.5rem);
   --text-base-5xl-clamp-xs: clamp(1rem, calc(1rem + 0.04167 * (100vw - 32rem)), 3rem);
@@ -1228,7 +1228,7 @@
   --text-base-5xl-clamp-xl-2xl: clamp(1rem, calc(1rem + 0.12500 * (100vw - 80rem)), 3rem);
   --text-base-5xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.5rem + -0.03125 * (100vw - 80rem)), 1.5rem);
   --text-base-6xl-clamp: clamp(1rem, calc(1rem + 0.06875 * (100vw - 40rem)), 3.75rem);
-  --text-base-6xl-clamp--line-height: clamp(1rem, calc(1.5rem + -0.01250 * (100vw - 40rem)), 1.5rem);
+  --text-base-6xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01250 * (100vw - 40rem)), 1.5rem);
   --text-base-6xl-clamp-2xs: clamp(1rem, calc(1rem + 0.04911 * (100vw - 24rem)), 3.75rem);
   --text-base-6xl-clamp-2xs--line-height: clamp(1rem, calc(1.5rem + -0.00893 * (100vw - 24rem)), 1.5rem);
   --text-base-6xl-clamp-xs: clamp(1rem, calc(1rem + 0.05729 * (100vw - 32rem)), 3.75rem);
@@ -1270,7 +1270,7 @@
   --text-base-6xl-clamp-xl-2xl: clamp(1rem, calc(1rem + 0.17188 * (100vw - 80rem)), 3.75rem);
   --text-base-6xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.5rem + -0.03125 * (100vw - 80rem)), 1.5rem);
   --text-base-7xl-clamp: clamp(1rem, calc(1rem + 0.08750 * (100vw - 40rem)), 4.5rem);
-  --text-base-7xl-clamp--line-height: clamp(1rem, calc(1.5rem + -0.01250 * (100vw - 40rem)), 1.5rem);
+  --text-base-7xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01250 * (100vw - 40rem)), 1.5rem);
   --text-base-7xl-clamp-2xs: clamp(1rem, calc(1rem + 0.06250 * (100vw - 24rem)), 4.5rem);
   --text-base-7xl-clamp-2xs--line-height: clamp(1rem, calc(1.5rem + -0.00893 * (100vw - 24rem)), 1.5rem);
   --text-base-7xl-clamp-xs: clamp(1rem, calc(1rem + 0.07292 * (100vw - 32rem)), 4.5rem);
@@ -1312,7 +1312,7 @@
   --text-base-7xl-clamp-xl-2xl: clamp(1rem, calc(1rem + 0.21875 * (100vw - 80rem)), 4.5rem);
   --text-base-7xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.5rem + -0.03125 * (100vw - 80rem)), 1.5rem);
   --text-base-8xl-clamp: clamp(1rem, calc(1rem + 0.12500 * (100vw - 40rem)), 6rem);
-  --text-base-8xl-clamp--line-height: clamp(1rem, calc(1.5rem + -0.01250 * (100vw - 40rem)), 1.5rem);
+  --text-base-8xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01250 * (100vw - 40rem)), 1.5rem);
   --text-base-8xl-clamp-2xs: clamp(1rem, calc(1rem + 0.08929 * (100vw - 24rem)), 6rem);
   --text-base-8xl-clamp-2xs--line-height: clamp(1rem, calc(1.5rem + -0.00893 * (100vw - 24rem)), 1.5rem);
   --text-base-8xl-clamp-xs: clamp(1rem, calc(1rem + 0.10417 * (100vw - 32rem)), 6rem);
@@ -1354,7 +1354,7 @@
   --text-base-8xl-clamp-xl-2xl: clamp(1rem, calc(1rem + 0.31250 * (100vw - 80rem)), 6rem);
   --text-base-8xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.5rem + -0.03125 * (100vw - 80rem)), 1.5rem);
   --text-base-9xl-clamp: clamp(1rem, calc(1rem + 0.17500 * (100vw - 40rem)), 8rem);
-  --text-base-9xl-clamp--line-height: clamp(1rem, calc(1.5rem + -0.01250 * (100vw - 40rem)), 1.5rem);
+  --text-base-9xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01250 * (100vw - 40rem)), 1.5rem);
   --text-base-9xl-clamp-2xs: clamp(1rem, calc(1rem + 0.12500 * (100vw - 24rem)), 8rem);
   --text-base-9xl-clamp-2xs--line-height: clamp(1rem, calc(1.5rem + -0.00893 * (100vw - 24rem)), 1.5rem);
   --text-base-9xl-clamp-xs: clamp(1rem, calc(1rem + 0.14583 * (100vw - 32rem)), 8rem);
@@ -1396,7 +1396,7 @@
   --text-base-9xl-clamp-xl-2xl: clamp(1rem, calc(1rem + 0.43750 * (100vw - 80rem)), 8rem);
   --text-base-9xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.5rem + -0.03125 * (100vw - 80rem)), 1.5rem);
   --text-lg-xl-clamp: clamp(1.125rem, calc(1.125rem + 0.00313 * (100vw - 40rem)), 1.25rem);
-  --text-lg-xl-clamp--line-height: clamp(1.4rem, calc(1.55555rem + -0.00389 * (100vw - 40rem)), 1.55555rem);
+  --text-lg-xl-clamp--line-height: clamp(1.4rem, calc(1.4rem + 0.00389 * (100vw - 40rem)), 1.55555rem);
   --text-lg-xl-clamp-2xs: clamp(1.125rem, calc(1.125rem + 0.00223 * (100vw - 24rem)), 1.25rem);
   --text-lg-xl-clamp-2xs--line-height: clamp(1.4rem, calc(1.55555rem + -0.00278 * (100vw - 24rem)), 1.55555rem);
   --text-lg-xl-clamp-xs: clamp(1.125rem, calc(1.125rem + 0.00260 * (100vw - 32rem)), 1.25rem);
@@ -1438,7 +1438,7 @@
   --text-lg-xl-clamp-xl-2xl: clamp(1.125rem, calc(1.125rem + 0.00781 * (100vw - 80rem)), 1.25rem);
   --text-lg-xl-clamp-xl-2xl--line-height: clamp(1.4rem, calc(1.55555rem + -0.00972 * (100vw - 80rem)), 1.55555rem);
   --text-lg-2xl-clamp: clamp(1.125rem, calc(1.125rem + 0.00937 * (100vw - 40rem)), 1.5rem);
-  --text-lg-2xl-clamp--line-height: clamp(1.33333rem, calc(1.55555rem + -0.00556 * (100vw - 40rem)), 1.55555rem);
+  --text-lg-2xl-clamp--line-height: clamp(1.33333rem, calc(1.33333rem + 0.00556 * (100vw - 40rem)), 1.55555rem);
   --text-lg-2xl-clamp-2xs: clamp(1.125rem, calc(1.125rem + 0.00670 * (100vw - 24rem)), 1.5rem);
   --text-lg-2xl-clamp-2xs--line-height: clamp(1.33333rem, calc(1.55555rem + -0.00397 * (100vw - 24rem)), 1.55555rem);
   --text-lg-2xl-clamp-xs: clamp(1.125rem, calc(1.125rem + 0.00781 * (100vw - 32rem)), 1.5rem);
@@ -1480,7 +1480,7 @@
   --text-lg-2xl-clamp-xl-2xl: clamp(1.125rem, calc(1.125rem + 0.02344 * (100vw - 80rem)), 1.5rem);
   --text-lg-2xl-clamp-xl-2xl--line-height: clamp(1.33333rem, calc(1.55555rem + -0.01389 * (100vw - 80rem)), 1.55555rem);
   --text-lg-3xl-clamp: clamp(1.125rem, calc(1.125rem + 0.01875 * (100vw - 40rem)), 1.875rem);
-  --text-lg-3xl-clamp--line-height: clamp(1.2rem, calc(1.55555rem + -0.00889 * (100vw - 40rem)), 1.55555rem);
+  --text-lg-3xl-clamp--line-height: clamp(1.2rem, calc(1.2rem + 0.00889 * (100vw - 40rem)), 1.55555rem);
   --text-lg-3xl-clamp-2xs: clamp(1.125rem, calc(1.125rem + 0.01339 * (100vw - 24rem)), 1.875rem);
   --text-lg-3xl-clamp-2xs--line-height: clamp(1.2rem, calc(1.55555rem + -0.00635 * (100vw - 24rem)), 1.55555rem);
   --text-lg-3xl-clamp-xs: clamp(1.125rem, calc(1.125rem + 0.01563 * (100vw - 32rem)), 1.875rem);
@@ -1522,7 +1522,7 @@
   --text-lg-3xl-clamp-xl-2xl: clamp(1.125rem, calc(1.125rem + 0.04688 * (100vw - 80rem)), 1.875rem);
   --text-lg-3xl-clamp-xl-2xl--line-height: clamp(1.2rem, calc(1.55555rem + -0.02222 * (100vw - 80rem)), 1.55555rem);
   --text-lg-4xl-clamp: clamp(1.125rem, calc(1.125rem + 0.02813 * (100vw - 40rem)), 2.25rem);
-  --text-lg-4xl-clamp--line-height: clamp(1.11111rem, calc(1.55555rem + -0.01111 * (100vw - 40rem)), 1.55555rem);
+  --text-lg-4xl-clamp--line-height: clamp(1.11111rem, calc(1.11111rem + 0.01111 * (100vw - 40rem)), 1.55555rem);
   --text-lg-4xl-clamp-2xs: clamp(1.125rem, calc(1.125rem + 0.02009 * (100vw - 24rem)), 2.25rem);
   --text-lg-4xl-clamp-2xs--line-height: clamp(1.11111rem, calc(1.55555rem + -0.00794 * (100vw - 24rem)), 1.55555rem);
   --text-lg-4xl-clamp-xs: clamp(1.125rem, calc(1.125rem + 0.02344 * (100vw - 32rem)), 2.25rem);
@@ -1564,7 +1564,7 @@
   --text-lg-4xl-clamp-xl-2xl: clamp(1.125rem, calc(1.125rem + 0.07031 * (100vw - 80rem)), 2.25rem);
   --text-lg-4xl-clamp-xl-2xl--line-height: clamp(1.11111rem, calc(1.55555rem + -0.02778 * (100vw - 80rem)), 1.55555rem);
   --text-lg-5xl-clamp: clamp(1.125rem, calc(1.125rem + 0.04688 * (100vw - 40rem)), 3rem);
-  --text-lg-5xl-clamp--line-height: clamp(1rem, calc(1.55555rem + -0.01389 * (100vw - 40rem)), 1.55555rem);
+  --text-lg-5xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01389 * (100vw - 40rem)), 1.55555rem);
   --text-lg-5xl-clamp-2xs: clamp(1.125rem, calc(1.125rem + 0.03348 * (100vw - 24rem)), 3rem);
   --text-lg-5xl-clamp-2xs--line-height: clamp(1rem, calc(1.55555rem + -0.00992 * (100vw - 24rem)), 1.55555rem);
   --text-lg-5xl-clamp-xs: clamp(1.125rem, calc(1.125rem + 0.03906 * (100vw - 32rem)), 3rem);
@@ -1606,7 +1606,7 @@
   --text-lg-5xl-clamp-xl-2xl: clamp(1.125rem, calc(1.125rem + 0.11719 * (100vw - 80rem)), 3rem);
   --text-lg-5xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.55555rem + -0.03472 * (100vw - 80rem)), 1.55555rem);
   --text-lg-6xl-clamp: clamp(1.125rem, calc(1.125rem + 0.06563 * (100vw - 40rem)), 3.75rem);
-  --text-lg-6xl-clamp--line-height: clamp(1rem, calc(1.55555rem + -0.01389 * (100vw - 40rem)), 1.55555rem);
+  --text-lg-6xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01389 * (100vw - 40rem)), 1.55555rem);
   --text-lg-6xl-clamp-2xs: clamp(1.125rem, calc(1.125rem + 0.04688 * (100vw - 24rem)), 3.75rem);
   --text-lg-6xl-clamp-2xs--line-height: clamp(1rem, calc(1.55555rem + -0.00992 * (100vw - 24rem)), 1.55555rem);
   --text-lg-6xl-clamp-xs: clamp(1.125rem, calc(1.125rem + 0.05469 * (100vw - 32rem)), 3.75rem);
@@ -1648,7 +1648,7 @@
   --text-lg-6xl-clamp-xl-2xl: clamp(1.125rem, calc(1.125rem + 0.16406 * (100vw - 80rem)), 3.75rem);
   --text-lg-6xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.55555rem + -0.03472 * (100vw - 80rem)), 1.55555rem);
   --text-lg-7xl-clamp: clamp(1.125rem, calc(1.125rem + 0.08438 * (100vw - 40rem)), 4.5rem);
-  --text-lg-7xl-clamp--line-height: clamp(1rem, calc(1.55555rem + -0.01389 * (100vw - 40rem)), 1.55555rem);
+  --text-lg-7xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01389 * (100vw - 40rem)), 1.55555rem);
   --text-lg-7xl-clamp-2xs: clamp(1.125rem, calc(1.125rem + 0.06027 * (100vw - 24rem)), 4.5rem);
   --text-lg-7xl-clamp-2xs--line-height: clamp(1rem, calc(1.55555rem + -0.00992 * (100vw - 24rem)), 1.55555rem);
   --text-lg-7xl-clamp-xs: clamp(1.125rem, calc(1.125rem + 0.07031 * (100vw - 32rem)), 4.5rem);
@@ -1690,7 +1690,7 @@
   --text-lg-7xl-clamp-xl-2xl: clamp(1.125rem, calc(1.125rem + 0.21094 * (100vw - 80rem)), 4.5rem);
   --text-lg-7xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.55555rem + -0.03472 * (100vw - 80rem)), 1.55555rem);
   --text-lg-8xl-clamp: clamp(1.125rem, calc(1.125rem + 0.12187 * (100vw - 40rem)), 6rem);
-  --text-lg-8xl-clamp--line-height: clamp(1rem, calc(1.55555rem + -0.01389 * (100vw - 40rem)), 1.55555rem);
+  --text-lg-8xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01389 * (100vw - 40rem)), 1.55555rem);
   --text-lg-8xl-clamp-2xs: clamp(1.125rem, calc(1.125rem + 0.08705 * (100vw - 24rem)), 6rem);
   --text-lg-8xl-clamp-2xs--line-height: clamp(1rem, calc(1.55555rem + -0.00992 * (100vw - 24rem)), 1.55555rem);
   --text-lg-8xl-clamp-xs: clamp(1.125rem, calc(1.125rem + 0.10156 * (100vw - 32rem)), 6rem);
@@ -1732,7 +1732,7 @@
   --text-lg-8xl-clamp-xl-2xl: clamp(1.125rem, calc(1.125rem + 0.30469 * (100vw - 80rem)), 6rem);
   --text-lg-8xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.55555rem + -0.03472 * (100vw - 80rem)), 1.55555rem);
   --text-lg-9xl-clamp: clamp(1.125rem, calc(1.125rem + 0.17188 * (100vw - 40rem)), 8rem);
-  --text-lg-9xl-clamp--line-height: clamp(1rem, calc(1.55555rem + -0.01389 * (100vw - 40rem)), 1.55555rem);
+  --text-lg-9xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01389 * (100vw - 40rem)), 1.55555rem);
   --text-lg-9xl-clamp-2xs: clamp(1.125rem, calc(1.125rem + 0.12277 * (100vw - 24rem)), 8rem);
   --text-lg-9xl-clamp-2xs--line-height: clamp(1rem, calc(1.55555rem + -0.00992 * (100vw - 24rem)), 1.55555rem);
   --text-lg-9xl-clamp-xs: clamp(1.125rem, calc(1.125rem + 0.14323 * (100vw - 32rem)), 8rem);
@@ -1774,7 +1774,7 @@
   --text-lg-9xl-clamp-xl-2xl: clamp(1.125rem, calc(1.125rem + 0.42969 * (100vw - 80rem)), 8rem);
   --text-lg-9xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.55555rem + -0.03472 * (100vw - 80rem)), 1.55555rem);
   --text-xl-2xl-clamp: clamp(1.25rem, calc(1.25rem + 0.00625 * (100vw - 40rem)), 1.5rem);
-  --text-xl-2xl-clamp--line-height: clamp(1.33333rem, calc(1.4rem + -0.00167 * (100vw - 40rem)), 1.4rem);
+  --text-xl-2xl-clamp--line-height: clamp(1.33333rem, calc(1.33333rem + 0.00167 * (100vw - 40rem)), 1.4rem);
   --text-xl-2xl-clamp-2xs: clamp(1.25rem, calc(1.25rem + 0.00446 * (100vw - 24rem)), 1.5rem);
   --text-xl-2xl-clamp-2xs--line-height: clamp(1.33333rem, calc(1.4rem + -0.00119 * (100vw - 24rem)), 1.4rem);
   --text-xl-2xl-clamp-xs: clamp(1.25rem, calc(1.25rem + 0.00521 * (100vw - 32rem)), 1.5rem);
@@ -1816,7 +1816,7 @@
   --text-xl-2xl-clamp-xl-2xl: clamp(1.25rem, calc(1.25rem + 0.01563 * (100vw - 80rem)), 1.5rem);
   --text-xl-2xl-clamp-xl-2xl--line-height: clamp(1.33333rem, calc(1.4rem + -0.00417 * (100vw - 80rem)), 1.4rem);
   --text-xl-3xl-clamp: clamp(1.25rem, calc(1.25rem + 0.01563 * (100vw - 40rem)), 1.875rem);
-  --text-xl-3xl-clamp--line-height: clamp(1.2rem, calc(1.4rem + -0.00500 * (100vw - 40rem)), 1.4rem);
+  --text-xl-3xl-clamp--line-height: clamp(1.2rem, calc(1.2rem + 0.00500 * (100vw - 40rem)), 1.4rem);
   --text-xl-3xl-clamp-2xs: clamp(1.25rem, calc(1.25rem + 0.01116 * (100vw - 24rem)), 1.875rem);
   --text-xl-3xl-clamp-2xs--line-height: clamp(1.2rem, calc(1.4rem + -0.00357 * (100vw - 24rem)), 1.4rem);
   --text-xl-3xl-clamp-xs: clamp(1.25rem, calc(1.25rem + 0.01302 * (100vw - 32rem)), 1.875rem);
@@ -1858,7 +1858,7 @@
   --text-xl-3xl-clamp-xl-2xl: clamp(1.25rem, calc(1.25rem + 0.03906 * (100vw - 80rem)), 1.875rem);
   --text-xl-3xl-clamp-xl-2xl--line-height: clamp(1.2rem, calc(1.4rem + -0.01250 * (100vw - 80rem)), 1.4rem);
   --text-xl-4xl-clamp: clamp(1.25rem, calc(1.25rem + 0.02500 * (100vw - 40rem)), 2.25rem);
-  --text-xl-4xl-clamp--line-height: clamp(1.11111rem, calc(1.4rem + -0.00722 * (100vw - 40rem)), 1.4rem);
+  --text-xl-4xl-clamp--line-height: clamp(1.11111rem, calc(1.11111rem + 0.00722 * (100vw - 40rem)), 1.4rem);
   --text-xl-4xl-clamp-2xs: clamp(1.25rem, calc(1.25rem + 0.01786 * (100vw - 24rem)), 2.25rem);
   --text-xl-4xl-clamp-2xs--line-height: clamp(1.11111rem, calc(1.4rem + -0.00516 * (100vw - 24rem)), 1.4rem);
   --text-xl-4xl-clamp-xs: clamp(1.25rem, calc(1.25rem + 0.02083 * (100vw - 32rem)), 2.25rem);
@@ -1900,7 +1900,7 @@
   --text-xl-4xl-clamp-xl-2xl: clamp(1.25rem, calc(1.25rem + 0.06250 * (100vw - 80rem)), 2.25rem);
   --text-xl-4xl-clamp-xl-2xl--line-height: clamp(1.11111rem, calc(1.4rem + -0.01806 * (100vw - 80rem)), 1.4rem);
   --text-xl-5xl-clamp: clamp(1.25rem, calc(1.25rem + 0.04375 * (100vw - 40rem)), 3rem);
-  --text-xl-5xl-clamp--line-height: clamp(1rem, calc(1.4rem + -0.01000 * (100vw - 40rem)), 1.4rem);
+  --text-xl-5xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01000 * (100vw - 40rem)), 1.4rem);
   --text-xl-5xl-clamp-2xs: clamp(1.25rem, calc(1.25rem + 0.03125 * (100vw - 24rem)), 3rem);
   --text-xl-5xl-clamp-2xs--line-height: clamp(1rem, calc(1.4rem + -0.00714 * (100vw - 24rem)), 1.4rem);
   --text-xl-5xl-clamp-xs: clamp(1.25rem, calc(1.25rem + 0.03646 * (100vw - 32rem)), 3rem);
@@ -1942,7 +1942,7 @@
   --text-xl-5xl-clamp-xl-2xl: clamp(1.25rem, calc(1.25rem + 0.10938 * (100vw - 80rem)), 3rem);
   --text-xl-5xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.4rem + -0.02500 * (100vw - 80rem)), 1.4rem);
   --text-xl-6xl-clamp: clamp(1.25rem, calc(1.25rem + 0.06250 * (100vw - 40rem)), 3.75rem);
-  --text-xl-6xl-clamp--line-height: clamp(1rem, calc(1.4rem + -0.01000 * (100vw - 40rem)), 1.4rem);
+  --text-xl-6xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01000 * (100vw - 40rem)), 1.4rem);
   --text-xl-6xl-clamp-2xs: clamp(1.25rem, calc(1.25rem + 0.04464 * (100vw - 24rem)), 3.75rem);
   --text-xl-6xl-clamp-2xs--line-height: clamp(1rem, calc(1.4rem + -0.00714 * (100vw - 24rem)), 1.4rem);
   --text-xl-6xl-clamp-xs: clamp(1.25rem, calc(1.25rem + 0.05208 * (100vw - 32rem)), 3.75rem);
@@ -1984,7 +1984,7 @@
   --text-xl-6xl-clamp-xl-2xl: clamp(1.25rem, calc(1.25rem + 0.15625 * (100vw - 80rem)), 3.75rem);
   --text-xl-6xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.4rem + -0.02500 * (100vw - 80rem)), 1.4rem);
   --text-xl-7xl-clamp: clamp(1.25rem, calc(1.25rem + 0.08125 * (100vw - 40rem)), 4.5rem);
-  --text-xl-7xl-clamp--line-height: clamp(1rem, calc(1.4rem + -0.01000 * (100vw - 40rem)), 1.4rem);
+  --text-xl-7xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01000 * (100vw - 40rem)), 1.4rem);
   --text-xl-7xl-clamp-2xs: clamp(1.25rem, calc(1.25rem + 0.05804 * (100vw - 24rem)), 4.5rem);
   --text-xl-7xl-clamp-2xs--line-height: clamp(1rem, calc(1.4rem + -0.00714 * (100vw - 24rem)), 1.4rem);
   --text-xl-7xl-clamp-xs: clamp(1.25rem, calc(1.25rem + 0.06771 * (100vw - 32rem)), 4.5rem);
@@ -2026,7 +2026,7 @@
   --text-xl-7xl-clamp-xl-2xl: clamp(1.25rem, calc(1.25rem + 0.20313 * (100vw - 80rem)), 4.5rem);
   --text-xl-7xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.4rem + -0.02500 * (100vw - 80rem)), 1.4rem);
   --text-xl-8xl-clamp: clamp(1.25rem, calc(1.25rem + 0.11875 * (100vw - 40rem)), 6rem);
-  --text-xl-8xl-clamp--line-height: clamp(1rem, calc(1.4rem + -0.01000 * (100vw - 40rem)), 1.4rem);
+  --text-xl-8xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01000 * (100vw - 40rem)), 1.4rem);
   --text-xl-8xl-clamp-2xs: clamp(1.25rem, calc(1.25rem + 0.08482 * (100vw - 24rem)), 6rem);
   --text-xl-8xl-clamp-2xs--line-height: clamp(1rem, calc(1.4rem + -0.00714 * (100vw - 24rem)), 1.4rem);
   --text-xl-8xl-clamp-xs: clamp(1.25rem, calc(1.25rem + 0.09896 * (100vw - 32rem)), 6rem);
@@ -2068,7 +2068,7 @@
   --text-xl-8xl-clamp-xl-2xl: clamp(1.25rem, calc(1.25rem + 0.29688 * (100vw - 80rem)), 6rem);
   --text-xl-8xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.4rem + -0.02500 * (100vw - 80rem)), 1.4rem);
   --text-xl-9xl-clamp: clamp(1.25rem, calc(1.25rem + 0.16875 * (100vw - 40rem)), 8rem);
-  --text-xl-9xl-clamp--line-height: clamp(1rem, calc(1.4rem + -0.01000 * (100vw - 40rem)), 1.4rem);
+  --text-xl-9xl-clamp--line-height: clamp(1rem, calc(1rem + 0.01000 * (100vw - 40rem)), 1.4rem);
   --text-xl-9xl-clamp-2xs: clamp(1.25rem, calc(1.25rem + 0.12054 * (100vw - 24rem)), 8rem);
   --text-xl-9xl-clamp-2xs--line-height: clamp(1rem, calc(1.4rem + -0.00714 * (100vw - 24rem)), 1.4rem);
   --text-xl-9xl-clamp-xs: clamp(1.25rem, calc(1.25rem + 0.14063 * (100vw - 32rem)), 8rem);
@@ -2110,7 +2110,7 @@
   --text-xl-9xl-clamp-xl-2xl: clamp(1.25rem, calc(1.25rem + 0.42188 * (100vw - 80rem)), 8rem);
   --text-xl-9xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.4rem + -0.02500 * (100vw - 80rem)), 1.4rem);
   --text-2xl-3xl-clamp: clamp(1.5rem, calc(1.5rem + 0.00937 * (100vw - 40rem)), 1.875rem);
-  --text-2xl-3xl-clamp--line-height: clamp(1.2rem, calc(1.33333rem + -0.00333 * (100vw - 40rem)), 1.33333rem);
+  --text-2xl-3xl-clamp--line-height: clamp(1.2rem, calc(1.2rem + 0.00333 * (100vw - 40rem)), 1.33333rem);
   --text-2xl-3xl-clamp-2xs: clamp(1.5rem, calc(1.5rem + 0.00670 * (100vw - 24rem)), 1.875rem);
   --text-2xl-3xl-clamp-2xs--line-height: clamp(1.2rem, calc(1.33333rem + -0.00238 * (100vw - 24rem)), 1.33333rem);
   --text-2xl-3xl-clamp-xs: clamp(1.5rem, calc(1.5rem + 0.00781 * (100vw - 32rem)), 1.875rem);
@@ -2152,7 +2152,7 @@
   --text-2xl-3xl-clamp-xl-2xl: clamp(1.5rem, calc(1.5rem + 0.02344 * (100vw - 80rem)), 1.875rem);
   --text-2xl-3xl-clamp-xl-2xl--line-height: clamp(1.2rem, calc(1.33333rem + -0.00833 * (100vw - 80rem)), 1.33333rem);
   --text-2xl-4xl-clamp: clamp(1.5rem, calc(1.5rem + 0.01875 * (100vw - 40rem)), 2.25rem);
-  --text-2xl-4xl-clamp--line-height: clamp(1.11111rem, calc(1.33333rem + -0.00556 * (100vw - 40rem)), 1.33333rem);
+  --text-2xl-4xl-clamp--line-height: clamp(1.11111rem, calc(1.11111rem + 0.00556 * (100vw - 40rem)), 1.33333rem);
   --text-2xl-4xl-clamp-2xs: clamp(1.5rem, calc(1.5rem + 0.01339 * (100vw - 24rem)), 2.25rem);
   --text-2xl-4xl-clamp-2xs--line-height: clamp(1.11111rem, calc(1.33333rem + -0.00397 * (100vw - 24rem)), 1.33333rem);
   --text-2xl-4xl-clamp-xs: clamp(1.5rem, calc(1.5rem + 0.01563 * (100vw - 32rem)), 2.25rem);
@@ -2194,7 +2194,7 @@
   --text-2xl-4xl-clamp-xl-2xl: clamp(1.5rem, calc(1.5rem + 0.04688 * (100vw - 80rem)), 2.25rem);
   --text-2xl-4xl-clamp-xl-2xl--line-height: clamp(1.11111rem, calc(1.33333rem + -0.01389 * (100vw - 80rem)), 1.33333rem);
   --text-2xl-5xl-clamp: clamp(1.5rem, calc(1.5rem + 0.03750 * (100vw - 40rem)), 3rem);
-  --text-2xl-5xl-clamp--line-height: clamp(1rem, calc(1.33333rem + -0.00833 * (100vw - 40rem)), 1.33333rem);
+  --text-2xl-5xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00833 * (100vw - 40rem)), 1.33333rem);
   --text-2xl-5xl-clamp-2xs: clamp(1.5rem, calc(1.5rem + 0.02679 * (100vw - 24rem)), 3rem);
   --text-2xl-5xl-clamp-2xs--line-height: clamp(1rem, calc(1.33333rem + -0.00595 * (100vw - 24rem)), 1.33333rem);
   --text-2xl-5xl-clamp-xs: clamp(1.5rem, calc(1.5rem + 0.03125 * (100vw - 32rem)), 3rem);
@@ -2236,7 +2236,7 @@
   --text-2xl-5xl-clamp-xl-2xl: clamp(1.5rem, calc(1.5rem + 0.09375 * (100vw - 80rem)), 3rem);
   --text-2xl-5xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.33333rem + -0.02083 * (100vw - 80rem)), 1.33333rem);
   --text-2xl-6xl-clamp: clamp(1.5rem, calc(1.5rem + 0.05625 * (100vw - 40rem)), 3.75rem);
-  --text-2xl-6xl-clamp--line-height: clamp(1rem, calc(1.33333rem + -0.00833 * (100vw - 40rem)), 1.33333rem);
+  --text-2xl-6xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00833 * (100vw - 40rem)), 1.33333rem);
   --text-2xl-6xl-clamp-2xs: clamp(1.5rem, calc(1.5rem + 0.04018 * (100vw - 24rem)), 3.75rem);
   --text-2xl-6xl-clamp-2xs--line-height: clamp(1rem, calc(1.33333rem + -0.00595 * (100vw - 24rem)), 1.33333rem);
   --text-2xl-6xl-clamp-xs: clamp(1.5rem, calc(1.5rem + 0.04688 * (100vw - 32rem)), 3.75rem);
@@ -2278,7 +2278,7 @@
   --text-2xl-6xl-clamp-xl-2xl: clamp(1.5rem, calc(1.5rem + 0.14063 * (100vw - 80rem)), 3.75rem);
   --text-2xl-6xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.33333rem + -0.02083 * (100vw - 80rem)), 1.33333rem);
   --text-2xl-7xl-clamp: clamp(1.5rem, calc(1.5rem + 0.07500 * (100vw - 40rem)), 4.5rem);
-  --text-2xl-7xl-clamp--line-height: clamp(1rem, calc(1.33333rem + -0.00833 * (100vw - 40rem)), 1.33333rem);
+  --text-2xl-7xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00833 * (100vw - 40rem)), 1.33333rem);
   --text-2xl-7xl-clamp-2xs: clamp(1.5rem, calc(1.5rem + 0.05357 * (100vw - 24rem)), 4.5rem);
   --text-2xl-7xl-clamp-2xs--line-height: clamp(1rem, calc(1.33333rem + -0.00595 * (100vw - 24rem)), 1.33333rem);
   --text-2xl-7xl-clamp-xs: clamp(1.5rem, calc(1.5rem + 0.06250 * (100vw - 32rem)), 4.5rem);
@@ -2320,7 +2320,7 @@
   --text-2xl-7xl-clamp-xl-2xl: clamp(1.5rem, calc(1.5rem + 0.18750 * (100vw - 80rem)), 4.5rem);
   --text-2xl-7xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.33333rem + -0.02083 * (100vw - 80rem)), 1.33333rem);
   --text-2xl-8xl-clamp: clamp(1.5rem, calc(1.5rem + 0.11250 * (100vw - 40rem)), 6rem);
-  --text-2xl-8xl-clamp--line-height: clamp(1rem, calc(1.33333rem + -0.00833 * (100vw - 40rem)), 1.33333rem);
+  --text-2xl-8xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00833 * (100vw - 40rem)), 1.33333rem);
   --text-2xl-8xl-clamp-2xs: clamp(1.5rem, calc(1.5rem + 0.08036 * (100vw - 24rem)), 6rem);
   --text-2xl-8xl-clamp-2xs--line-height: clamp(1rem, calc(1.33333rem + -0.00595 * (100vw - 24rem)), 1.33333rem);
   --text-2xl-8xl-clamp-xs: clamp(1.5rem, calc(1.5rem + 0.09375 * (100vw - 32rem)), 6rem);
@@ -2362,7 +2362,7 @@
   --text-2xl-8xl-clamp-xl-2xl: clamp(1.5rem, calc(1.5rem + 0.28125 * (100vw - 80rem)), 6rem);
   --text-2xl-8xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.33333rem + -0.02083 * (100vw - 80rem)), 1.33333rem);
   --text-2xl-9xl-clamp: clamp(1.5rem, calc(1.5rem + 0.16250 * (100vw - 40rem)), 8rem);
-  --text-2xl-9xl-clamp--line-height: clamp(1rem, calc(1.33333rem + -0.00833 * (100vw - 40rem)), 1.33333rem);
+  --text-2xl-9xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00833 * (100vw - 40rem)), 1.33333rem);
   --text-2xl-9xl-clamp-2xs: clamp(1.5rem, calc(1.5rem + 0.11607 * (100vw - 24rem)), 8rem);
   --text-2xl-9xl-clamp-2xs--line-height: clamp(1rem, calc(1.33333rem + -0.00595 * (100vw - 24rem)), 1.33333rem);
   --text-2xl-9xl-clamp-xs: clamp(1.5rem, calc(1.5rem + 0.13542 * (100vw - 32rem)), 8rem);
@@ -2404,7 +2404,7 @@
   --text-2xl-9xl-clamp-xl-2xl: clamp(1.5rem, calc(1.5rem + 0.40625 * (100vw - 80rem)), 8rem);
   --text-2xl-9xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.33333rem + -0.02083 * (100vw - 80rem)), 1.33333rem);
   --text-3xl-4xl-clamp: clamp(1.875rem, calc(1.875rem + 0.00937 * (100vw - 40rem)), 2.25rem);
-  --text-3xl-4xl-clamp--line-height: clamp(1.11111rem, calc(1.2rem + -0.00222 * (100vw - 40rem)), 1.2rem);
+  --text-3xl-4xl-clamp--line-height: clamp(1.11111rem, calc(1.11111rem + 0.00222 * (100vw - 40rem)), 1.2rem);
   --text-3xl-4xl-clamp-2xs: clamp(1.875rem, calc(1.875rem + 0.00670 * (100vw - 24rem)), 2.25rem);
   --text-3xl-4xl-clamp-2xs--line-height: clamp(1.11111rem, calc(1.2rem + -0.00159 * (100vw - 24rem)), 1.2rem);
   --text-3xl-4xl-clamp-xs: clamp(1.875rem, calc(1.875rem + 0.00781 * (100vw - 32rem)), 2.25rem);
@@ -2446,7 +2446,7 @@
   --text-3xl-4xl-clamp-xl-2xl: clamp(1.875rem, calc(1.875rem + 0.02344 * (100vw - 80rem)), 2.25rem);
   --text-3xl-4xl-clamp-xl-2xl--line-height: clamp(1.11111rem, calc(1.2rem + -0.00556 * (100vw - 80rem)), 1.2rem);
   --text-3xl-5xl-clamp: clamp(1.875rem, calc(1.875rem + 0.02813 * (100vw - 40rem)), 3rem);
-  --text-3xl-5xl-clamp--line-height: clamp(1rem, calc(1.2rem + -0.00500 * (100vw - 40rem)), 1.2rem);
+  --text-3xl-5xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00500 * (100vw - 40rem)), 1.2rem);
   --text-3xl-5xl-clamp-2xs: clamp(1.875rem, calc(1.875rem + 0.02009 * (100vw - 24rem)), 3rem);
   --text-3xl-5xl-clamp-2xs--line-height: clamp(1rem, calc(1.2rem + -0.00357 * (100vw - 24rem)), 1.2rem);
   --text-3xl-5xl-clamp-xs: clamp(1.875rem, calc(1.875rem + 0.02344 * (100vw - 32rem)), 3rem);
@@ -2488,7 +2488,7 @@
   --text-3xl-5xl-clamp-xl-2xl: clamp(1.875rem, calc(1.875rem + 0.07031 * (100vw - 80rem)), 3rem);
   --text-3xl-5xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.2rem + -0.01250 * (100vw - 80rem)), 1.2rem);
   --text-3xl-6xl-clamp: clamp(1.875rem, calc(1.875rem + 0.04688 * (100vw - 40rem)), 3.75rem);
-  --text-3xl-6xl-clamp--line-height: clamp(1rem, calc(1.2rem + -0.00500 * (100vw - 40rem)), 1.2rem);
+  --text-3xl-6xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00500 * (100vw - 40rem)), 1.2rem);
   --text-3xl-6xl-clamp-2xs: clamp(1.875rem, calc(1.875rem + 0.03348 * (100vw - 24rem)), 3.75rem);
   --text-3xl-6xl-clamp-2xs--line-height: clamp(1rem, calc(1.2rem + -0.00357 * (100vw - 24rem)), 1.2rem);
   --text-3xl-6xl-clamp-xs: clamp(1.875rem, calc(1.875rem + 0.03906 * (100vw - 32rem)), 3.75rem);
@@ -2530,7 +2530,7 @@
   --text-3xl-6xl-clamp-xl-2xl: clamp(1.875rem, calc(1.875rem + 0.11719 * (100vw - 80rem)), 3.75rem);
   --text-3xl-6xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.2rem + -0.01250 * (100vw - 80rem)), 1.2rem);
   --text-3xl-7xl-clamp: clamp(1.875rem, calc(1.875rem + 0.06563 * (100vw - 40rem)), 4.5rem);
-  --text-3xl-7xl-clamp--line-height: clamp(1rem, calc(1.2rem + -0.00500 * (100vw - 40rem)), 1.2rem);
+  --text-3xl-7xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00500 * (100vw - 40rem)), 1.2rem);
   --text-3xl-7xl-clamp-2xs: clamp(1.875rem, calc(1.875rem + 0.04688 * (100vw - 24rem)), 4.5rem);
   --text-3xl-7xl-clamp-2xs--line-height: clamp(1rem, calc(1.2rem + -0.00357 * (100vw - 24rem)), 1.2rem);
   --text-3xl-7xl-clamp-xs: clamp(1.875rem, calc(1.875rem + 0.05469 * (100vw - 32rem)), 4.5rem);
@@ -2572,7 +2572,7 @@
   --text-3xl-7xl-clamp-xl-2xl: clamp(1.875rem, calc(1.875rem + 0.16406 * (100vw - 80rem)), 4.5rem);
   --text-3xl-7xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.2rem + -0.01250 * (100vw - 80rem)), 1.2rem);
   --text-3xl-8xl-clamp: clamp(1.875rem, calc(1.875rem + 0.10312 * (100vw - 40rem)), 6rem);
-  --text-3xl-8xl-clamp--line-height: clamp(1rem, calc(1.2rem + -0.00500 * (100vw - 40rem)), 1.2rem);
+  --text-3xl-8xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00500 * (100vw - 40rem)), 1.2rem);
   --text-3xl-8xl-clamp-2xs: clamp(1.875rem, calc(1.875rem + 0.07366 * (100vw - 24rem)), 6rem);
   --text-3xl-8xl-clamp-2xs--line-height: clamp(1rem, calc(1.2rem + -0.00357 * (100vw - 24rem)), 1.2rem);
   --text-3xl-8xl-clamp-xs: clamp(1.875rem, calc(1.875rem + 0.08594 * (100vw - 32rem)), 6rem);
@@ -2614,7 +2614,7 @@
   --text-3xl-8xl-clamp-xl-2xl: clamp(1.875rem, calc(1.875rem + 0.25781 * (100vw - 80rem)), 6rem);
   --text-3xl-8xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.2rem + -0.01250 * (100vw - 80rem)), 1.2rem);
   --text-3xl-9xl-clamp: clamp(1.875rem, calc(1.875rem + 0.15313 * (100vw - 40rem)), 8rem);
-  --text-3xl-9xl-clamp--line-height: clamp(1rem, calc(1.2rem + -0.00500 * (100vw - 40rem)), 1.2rem);
+  --text-3xl-9xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00500 * (100vw - 40rem)), 1.2rem);
   --text-3xl-9xl-clamp-2xs: clamp(1.875rem, calc(1.875rem + 0.10938 * (100vw - 24rem)), 8rem);
   --text-3xl-9xl-clamp-2xs--line-height: clamp(1rem, calc(1.2rem + -0.00357 * (100vw - 24rem)), 1.2rem);
   --text-3xl-9xl-clamp-xs: clamp(1.875rem, calc(1.875rem + 0.12760 * (100vw - 32rem)), 8rem);
@@ -2656,7 +2656,7 @@
   --text-3xl-9xl-clamp-xl-2xl: clamp(1.875rem, calc(1.875rem + 0.38281 * (100vw - 80rem)), 8rem);
   --text-3xl-9xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.2rem + -0.01250 * (100vw - 80rem)), 1.2rem);
   --text-4xl-5xl-clamp: clamp(2.25rem, calc(2.25rem + 0.01875 * (100vw - 40rem)), 3rem);
-  --text-4xl-5xl-clamp--line-height: clamp(1rem, calc(1.11111rem + -0.00278 * (100vw - 40rem)), 1.11111rem);
+  --text-4xl-5xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00278 * (100vw - 40rem)), 1.11111rem);
   --text-4xl-5xl-clamp-2xs: clamp(2.25rem, calc(2.25rem + 0.01339 * (100vw - 24rem)), 3rem);
   --text-4xl-5xl-clamp-2xs--line-height: clamp(1rem, calc(1.11111rem + -0.00198 * (100vw - 24rem)), 1.11111rem);
   --text-4xl-5xl-clamp-xs: clamp(2.25rem, calc(2.25rem + 0.01563 * (100vw - 32rem)), 3rem);
@@ -2698,7 +2698,7 @@
   --text-4xl-5xl-clamp-xl-2xl: clamp(2.25rem, calc(2.25rem + 0.04688 * (100vw - 80rem)), 3rem);
   --text-4xl-5xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.11111rem + -0.00694 * (100vw - 80rem)), 1.11111rem);
   --text-4xl-6xl-clamp: clamp(2.25rem, calc(2.25rem + 0.03750 * (100vw - 40rem)), 3.75rem);
-  --text-4xl-6xl-clamp--line-height: clamp(1rem, calc(1.11111rem + -0.00278 * (100vw - 40rem)), 1.11111rem);
+  --text-4xl-6xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00278 * (100vw - 40rem)), 1.11111rem);
   --text-4xl-6xl-clamp-2xs: clamp(2.25rem, calc(2.25rem + 0.02679 * (100vw - 24rem)), 3.75rem);
   --text-4xl-6xl-clamp-2xs--line-height: clamp(1rem, calc(1.11111rem + -0.00198 * (100vw - 24rem)), 1.11111rem);
   --text-4xl-6xl-clamp-xs: clamp(2.25rem, calc(2.25rem + 0.03125 * (100vw - 32rem)), 3.75rem);
@@ -2740,7 +2740,7 @@
   --text-4xl-6xl-clamp-xl-2xl: clamp(2.25rem, calc(2.25rem + 0.09375 * (100vw - 80rem)), 3.75rem);
   --text-4xl-6xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.11111rem + -0.00694 * (100vw - 80rem)), 1.11111rem);
   --text-4xl-7xl-clamp: clamp(2.25rem, calc(2.25rem + 0.05625 * (100vw - 40rem)), 4.5rem);
-  --text-4xl-7xl-clamp--line-height: clamp(1rem, calc(1.11111rem + -0.00278 * (100vw - 40rem)), 1.11111rem);
+  --text-4xl-7xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00278 * (100vw - 40rem)), 1.11111rem);
   --text-4xl-7xl-clamp-2xs: clamp(2.25rem, calc(2.25rem + 0.04018 * (100vw - 24rem)), 4.5rem);
   --text-4xl-7xl-clamp-2xs--line-height: clamp(1rem, calc(1.11111rem + -0.00198 * (100vw - 24rem)), 1.11111rem);
   --text-4xl-7xl-clamp-xs: clamp(2.25rem, calc(2.25rem + 0.04688 * (100vw - 32rem)), 4.5rem);
@@ -2782,7 +2782,7 @@
   --text-4xl-7xl-clamp-xl-2xl: clamp(2.25rem, calc(2.25rem + 0.14063 * (100vw - 80rem)), 4.5rem);
   --text-4xl-7xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.11111rem + -0.00694 * (100vw - 80rem)), 1.11111rem);
   --text-4xl-8xl-clamp: clamp(2.25rem, calc(2.25rem + 0.09375 * (100vw - 40rem)), 6rem);
-  --text-4xl-8xl-clamp--line-height: clamp(1rem, calc(1.11111rem + -0.00278 * (100vw - 40rem)), 1.11111rem);
+  --text-4xl-8xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00278 * (100vw - 40rem)), 1.11111rem);
   --text-4xl-8xl-clamp-2xs: clamp(2.25rem, calc(2.25rem + 0.06696 * (100vw - 24rem)), 6rem);
   --text-4xl-8xl-clamp-2xs--line-height: clamp(1rem, calc(1.11111rem + -0.00198 * (100vw - 24rem)), 1.11111rem);
   --text-4xl-8xl-clamp-xs: clamp(2.25rem, calc(2.25rem + 0.07813 * (100vw - 32rem)), 6rem);
@@ -2824,7 +2824,7 @@
   --text-4xl-8xl-clamp-xl-2xl: clamp(2.25rem, calc(2.25rem + 0.23438 * (100vw - 80rem)), 6rem);
   --text-4xl-8xl-clamp-xl-2xl--line-height: clamp(1rem, calc(1.11111rem + -0.00694 * (100vw - 80rem)), 1.11111rem);
   --text-4xl-9xl-clamp: clamp(2.25rem, calc(2.25rem + 0.14375 * (100vw - 40rem)), 8rem);
-  --text-4xl-9xl-clamp--line-height: clamp(1rem, calc(1.11111rem + -0.00278 * (100vw - 40rem)), 1.11111rem);
+  --text-4xl-9xl-clamp--line-height: clamp(1rem, calc(1rem + 0.00278 * (100vw - 40rem)), 1.11111rem);
   --text-4xl-9xl-clamp-2xs: clamp(2.25rem, calc(2.25rem + 0.10268 * (100vw - 24rem)), 8rem);
   --text-4xl-9xl-clamp-2xs--line-height: clamp(1rem, calc(1.11111rem + -0.00198 * (100vw - 24rem)), 1.11111rem);
   --text-4xl-9xl-clamp-xs: clamp(2.25rem, calc(2.25rem + 0.11979 * (100vw - 32rem)), 8rem);

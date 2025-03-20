@@ -136,8 +136,8 @@ function generateFontSizeClamps() {
         defaultMaxBreakpoint,
       );
       const defaultLineHeightClamp = generateClamp(
-        minLineHeightValue,
         maxLineHeightValue,
+        minLineHeightValue,
         defaultMinBreakpoint,
         defaultMaxBreakpoint,
       );
