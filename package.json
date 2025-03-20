@@ -1,0 +1,36 @@
+{
+  "name": "tailwind-clamp-plugin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "css",
+    "postcss",
+    "plugin",
+    "animation",
+    "transition",
+    "animate",
+    "animated",
+    "animatecss",
+    "animate.css",
+    "fade",
+    "slide",
+    "zoom",
+    "spin",
+    "opacity",
+    "transform",
+    "translate",
+    "scale"
+  ],
+  "author": "Michael Brusegard",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^4.0.14"
+  }
+}
