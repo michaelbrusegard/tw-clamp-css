@@ -1,8 +1,8 @@
 {
   "name": "tw-clamp-css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TailwindCSS v4.0 compatible CSS clamp()",
-  "main": "src/tw-clamp.css",
+  "license": "MIT",
   "type": "module",
   "keywords": [
     "tailwind",
@@ -11,9 +11,20 @@
     "plugin",
     "clamp"
   ],
-  "author": "Michael Brusegard",
-  "license": "MIT",
+  "homepage": "https://github.com/michaelbrusegard/tw-clamp-css#readme",
+  "bugs": "https://github.com/michaelbrusegard/tw-clamp-css/issues",
+  "repository": "michaelbrusegard/tw-clamp-css",
+  "author": {
+    "name": "Michael Brusegard",
+    "url": "https://github.com/michaelbrusegard"
+  },
+  "exports": "./dist/tw-clamp.css",
+  "main": "./dist/tw-clamp.css",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "pnpx @tailwindcss/cli -i ./src/tw-clamp.css -o ./dist/tw-clamp.css -m",
     "generate": "node ./src/index.js"
   },
   "devDependencies": {
