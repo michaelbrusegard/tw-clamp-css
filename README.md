@@ -43,6 +43,24 @@ Structure: `<property>-<value1>-<value2>-clamp-<breakpoint1>-<breakpoint2>`
 - The values use the property's Tailwind values, so you can for example use `sm` for `text`, `8` for `padding` and `margin` etc.
 - The breakpoints are the Tailwind breakpoints you want to clamp between. If you only specify one breakpoint, the other breakpoint will be the default value. The default values are `sm` for breakpoint1 and `xl` for breakpoint2.
 
+There is also extra variants for the following values and breakpoints:
+
+```css
+  /* Breakpoints */
+  --breakpoint-2xs: 24rem;
+  --breakpoint-xs: 32rem;
+
+  /* Spacing */
+  --spacing-112: 28rem;
+  --spacing-128: 32rem;
+  --spacing-144: 36rem;
+  --spacing-160: 40rem;
+  --spacing-176: 44rem;
+  --spacing-192: 48rem;
+```
+
+So you can use larger values for spacing and smaller breakpoints if you want to.
+
 ## References
 
 - [fluid-tailwind](https://github.com/barvian/fluid-tailwind)
