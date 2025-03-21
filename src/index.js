@@ -85,12 +85,11 @@ function generateClamp(
     (maxSizeRemValue - minSizeRemValue) /
     (maxBreakpointRemValue - minBreakpointRemValue);
 
-  const preferredValue = `${minSizeRemValue}rem + ${slope.toFixed(
-    5,
-  )} * (100vw - ${minBreakpointRemValue}rem)`;
+  const roundedMinSize = Number(minSizeRemValue.toFixed(3));
+  const preferredValue = `${roundedMinSize}rem + ${slope.toFixed(4)} * (100vw - ${minBreakpointRemValue}rem)`;
 
-  const minValue = Math.min(minSizeRemValue, maxSizeRemValue);
-  const maxValue = Math.max(minSizeRemValue, maxSizeRemValue);
+  const minValue = Number(Math.min(minSizeRemValue, maxSizeRemValue).toFixed(3));
+  const maxValue = Number(Math.max(minSizeRemValue, maxSizeRemValue).toFixed(3));
 
   return `clamp(${minValue}rem, calc(${preferredValue}), ${maxValue}rem)`;
 }
@@ -127,168 +126,130 @@ function generateFontSizeClamps() {
 
       const value1 = parseFloat(size1);
       const value2 = parseFloat(size2);
+
+      if (value1 === value2) continue;
+
       const lineHeight1Value = value1 * parseFloat(lineHeight1.lineHeight);
       const lineHeight2Value = value2 * parseFloat(lineHeight2.lineHeight);
 
-      // Default clamp (sm to xl)
-      const defaultSizeClamp = generateClamp(
-        value1,
-        value2,
-        defaultMinBreakpoint,
-        defaultMaxBreakpoint,
-      );
-      const defaultLineHeightClamp = generateClamp(
-        lineHeight1Value,
-        lineHeight2Value,
-        defaultMinBreakpoint,
-        defaultMaxBreakpoint,
-      );
-      lines.push(
-        `--text-${size1Name}-${size2Name}-clamp: ${defaultSizeClamp};`,
-        `--text-${size1Name}-${size2Name}-clamp--line-height: ${defaultLineHeightClamp};`,
-      );
-
-      // Single breakpoint variations (min only)
-      Object.keys(breakpoints).forEach((breakpoint) => {
-        const bpValue = parseFloat(breakpoints[breakpoint]);
-        const sizeClampMin = generateClamp(
-          value1,
-          value2,
-          bpValue,
-          defaultMaxBreakpoint,
-        );
-        const lineHeightClampMin = generateClamp(
-          lineHeight1Value,
-          lineHeight2Value,
-          bpValue,
-          defaultMaxBreakpoint,
-        );
-        lines.push(
-          `--text-${size1Name}-${size2Name}-clamp-${breakpoint}: ${sizeClampMin};`,
-          `--text-${size1Name}-${size2Name}-clamp-${breakpoint}--line-height: ${lineHeightClampMin};`,
-        );
-      });
-
-      // Single breakpoint variations (max only)
-      Object.keys(breakpoints).forEach((breakpoint) => {
-        const bpValue = parseFloat(breakpoints[breakpoint]);
-        const sizeClampMax = generateClamp(
+      if (defaultMinBreakpoint !== defaultMaxBreakpoint) {
+        const clampValue = generateClamp(
           value1,
           value2,
           defaultMinBreakpoint,
-          bpValue,
+          defaultMaxBreakpoint
         );
-        const lineHeightClampMax = generateClamp(
+        lines.push(`--text-${size1Name}-${size2Name}-clamp: ${clampValue};`);
+        const lineHeightClampValue = generateClamp(
           lineHeight1Value,
           lineHeight2Value,
           defaultMinBreakpoint,
-          bpValue,
+          defaultMaxBreakpoint
         );
         lines.push(
-          `--text-${size1Name}-${size2Name}-clamp--${breakpoint}: ${sizeClampMax};`,
-          `--text-${size1Name}-${size2Name}-clamp--${breakpoint}--line-height: ${lineHeightClampMax};`,
+          `--text-${size1Name}-${size2Name}-clamp--line-height: ${lineHeightClampValue};`
         );
-      });
+      }
 
-      // Full breakpoint range combinations
-      for (let k = 0; k < breakpointValues.length - 1; k++) {
-        const minBreakpoint = parseFloat(breakpointValues[k]);
-        const maxBreakpoint = parseFloat(breakpointValues[k + 1]);
+      for (let k = 0; k < breakpointValues.length; k++) {
+        const minBreakpointValue = parseFloat(breakpointValues[k]);
 
-        const sizeClamp = generateClamp(
+        if (k === breakpointValues.length - 1) {
+          break;
+        }
+
+        const maxBreakpointValue = parseFloat(breakpointValues[k + 1]);
+
+        if (minBreakpointValue === maxBreakpointValue) continue;
+
+        const clampValue = generateClamp(
           value1,
           value2,
-          minBreakpoint,
-          maxBreakpoint,
+          minBreakpointValue,
+          maxBreakpointValue
         );
-        const lineHeightClamp = generateClamp(
+        const lineHeightClampValue = generateClamp(
           lineHeight1Value,
           lineHeight2Value,
-          minBreakpoint,
-          maxBreakpoint,
+          minBreakpointValue,
+          maxBreakpointValue
         );
 
+        const breakpointName = Object.keys(breakpoints)[k];
+        const nextBreakpointName = Object.keys(breakpoints)[k + 1];
+
         lines.push(
-          `--text-${size1Name}-${size2Name}-clamp-${Object.keys(breakpoints)[k]}-${Object.keys(breakpoints)[k + 1]}: ${sizeClamp};`,
-          `--text-${size1Name}-${size2Name}-clamp-${Object.keys(breakpoints)[k]}-${Object.keys(breakpoints)[k + 1]}--line-height: ${lineHeightClamp};`,
+          `--text-${size1Name}-${size2Name}-clamp-${breakpointName}-${nextBreakpointName}: ${clampValue};`
+        );
+        lines.push(
+          `--text-${size1Name}-${size2Name}-clamp-${breakpointName}-${nextBreakpointName}--line-height: ${lineHeightClampValue};`
         );
       }
     }
   }
+
   return lines;
 }
 
 function generateSpacingClamps() {
   const lines = [];
-  const spacingValues = Object.values(spacing);
+  const spacingEntries = Object.entries(spacing);
   const breakpointValues = Object.values(breakpoints);
   const defaultMinBreakpoint = parseFloat(breakpoints.sm);
   const defaultMaxBreakpoint = parseFloat(breakpoints.xl);
 
-  for (let i = 0; i < spacingValues.length; i++) {
-    for (let j = 0; j < spacingValues.length; j++) {
+  for (let i = 0; i < spacingEntries.length; i++) {
+    for (let j = 0; j < spacingEntries.length; j++) {
       if (i === j) continue;
 
-      const value1 = parseFloat(spacingValues[i]);
-      const value2 = parseFloat(spacingValues[j]);
+      const [spacing1Name, spacing1] = spacingEntries[i];
+      const [spacing2Name, spacing2] = spacingEntries[j];
 
-      // Default clamp (sm to xl)
-      const defaultClamp = generateClamp(
-        value1,
-        value2,
-        defaultMinBreakpoint,
-        defaultMaxBreakpoint,
-      );
-      lines.push(
-        `--spacing-${Object.keys(spacing)[i]}-${Object.keys(spacing)[j]}-clamp: ${defaultClamp};`,
-      );
+      const value1 = parseFloat(spacing1);
+      const value2 = parseFloat(spacing2);
 
-      // Single breakpoint variations (min only)
-      Object.keys(breakpoints).forEach((breakpoint) => {
-        const bpValue = parseFloat(breakpoints[breakpoint]);
-        const clampMin = generateClamp(
-          value1,
-          value2,
-          bpValue,
-          defaultMaxBreakpoint,
-        );
-        lines.push(
-          `--spacing-${Object.keys(spacing)[i]}-${Object.keys(spacing)[j]}-clamp-${breakpoint}: ${clampMin};`,
-        );
-      });
+      if (value1 === value2) continue;
 
-      // Single breakpoint variations (max only)
-      Object.keys(breakpoints).forEach((breakpoint) => {
-        const bpValue = parseFloat(breakpoints[breakpoint]);
-        const clampMax = generateClamp(
-          value1,
-          value2,
-          defaultMinBreakpoint,
-          bpValue,
-        );
-        lines.push(
-          `--spacing-${Object.keys(spacing)[i]}-${Object.keys(spacing)[j]}-clamp--${breakpoint}: ${clampMax};`,
-        );
-      });
-
-      // Full breakpoint range combinations
-      for (let k = 0; k < breakpointValues.length - 1; k++) {
-        const minBreakpoint = parseFloat(breakpointValues[k]);
-        const maxBreakpoint = parseFloat(breakpointValues[k + 1]);
+      if (defaultMinBreakpoint !== defaultMaxBreakpoint) {
         const clampValue = generateClamp(
           value1,
           value2,
-          minBreakpoint,
-          maxBreakpoint,
+          defaultMinBreakpoint,
+          defaultMaxBreakpoint
+        );
+        lines.push(
+          `--spacing-${spacing1Name}-${spacing2Name}-clamp: ${clampValue};`
+        );
+      }
+
+      for (let k = 0; k < breakpointValues.length; k++) {
+        const minBreakpointValue = parseFloat(breakpointValues[k]);
+
+        if (k === breakpointValues.length - 1) {
+          break;
+        }
+
+        const maxBreakpointValue = parseFloat(breakpointValues[k + 1]);
+
+        if (minBreakpointValue === maxBreakpointValue) continue;
+
+        const clampValue = generateClamp(
+          value1,
+          value2,
+          minBreakpointValue,
+          maxBreakpointValue
         );
 
+        const breakpointName = Object.keys(breakpoints)[k];
+        const nextBreakpointName = Object.keys(breakpoints)[k + 1];
+
         lines.push(
-          `--spacing-${Object.keys(spacing)[i]}-${Object.keys(spacing)[j]}-clamp-${Object.keys(breakpoints)[k]
-          }-${Object.keys(breakpoints)[k + 1]}: ${clampValue};`,
+          `--spacing-${spacing1Name}-${spacing2Name}-clamp-${breakpointName}-${nextBreakpointName}: ${clampValue};`
         );
       }
     }
   }
+
   return lines;
 }
 

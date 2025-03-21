@@ -42,6 +42,7 @@ Structure: `<property>-<value1>-<value2>-clamp-<breakpoint1>-<breakpoint2>`
 - The property is the Tailwind property you want to clamp.
 - The values use the property's Tailwind values, so you can for example use `sm` for `text`, `8` for `padding` and `margin` etc.
 - The breakpoints are the Tailwind breakpoints you want to clamp between. If you only specify one breakpoint, the other breakpoint will be the default value. The default values are `sm` for breakpoint1 and `xl` for breakpoint2.
+- Classes were the values are the same or the breakpoints are the same will not be generated.
 
 There is also extra variants for the following values and breakpoints:
 
