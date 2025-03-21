@@ -3,7 +3,7 @@
 TailwindCSS v4.0 compatible CSS clamp().
 
 ```html
-<!-- Adjust font size and line height smoothly from md to xl size -->
+<!-- Adjust font size and line height smoothly from md to xl font size and line height -->
 <div class="text-md-xl-clamp">...</div>
 
 <!-- Adjust spacing smoothly using padding, margin or gap -->
@@ -13,11 +13,11 @@ TailwindCSS v4.0 compatible CSS clamp().
 <div class="m-20-40-clamp-md-lg">...</div>
 
 <!-- Only specify one breakpoint to use the default value for the other -->
-<div class="text-sm-base-clamp--md]">...</div>
+<div class="text-sm-base-clamp--md">...</div>
 ```
 
 Instead of being an old-fashioned JavaScript plugin, this package provides a
-generated CSS file defining custom clamp values. The file is very large, but Tailwind will automatically remove unused CSS. This was made because I needed a simple solution for [fluid.tw](https://github.com/barvian/fluid-tailwind) in Tailwind CSS v4. Barvian's plugin is amazing and has probably a much smoother API than this one, but this is a very simple solution to using clamp that works until it (hopefully) gets natively implemented in Tailwind CSS.
+generated CSS file defining custom clamp values. The file is very large, but Tailwind will automatically remove unused CSS. This was made because I needed a simple solution for [fluid.tw](https://github.com/barvian/fluid-tailwind) in Tailwind CSS v4. Barvian's plugin is amazing and has probably a much smoother API than this one, but this is a very simple solution to using clamp that works until it (hopefully) gets natively implemented in Tailwind CSS. I also think it is quite simple to understand and use.
 
 ## Installation
 
