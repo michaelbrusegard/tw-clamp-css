@@ -86,7 +86,9 @@ function generateClamp(
     (maxBreakpointRemValue - minBreakpointRemValue);
 
   const roundedMinSize = Number(minSizeRemValue.toFixed(3));
-  const preferredValue = `${roundedMinSize}rem + ${slope.toFixed(4)} * (100vw - ${minBreakpointRemValue}rem)`;
+  const preferredValue = slope >= 0
+    ? `${roundedMinSize}rem + ${slope.toFixed(4)} * (100vw - ${minBreakpointRemValue}rem)`
+    : `${roundedMinSize}rem - ${Math.abs(slope).toFixed(4)} * (100vw - ${minBreakpointRemValue}rem)`;
 
   const minValue = Number(Math.min(minSizeRemValue, maxSizeRemValue).toFixed(3));
   const maxValue = Number(Math.max(minSizeRemValue, maxSizeRemValue).toFixed(3));
