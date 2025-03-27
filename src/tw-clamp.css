@@ -7,6 +7,11 @@
 
 @theme inline {
 
+  /* Breakpoints */
+
+  --breakpoint-2xs: 24rem;
+  --breakpoint-xs: 32rem;
+
   /* text */
 
   --text-xs-sm-clamp: clamp(0.75rem, calc(0.75rem + 0.0031 * (100vw - 40rem)), 0.875rem);
@@ -2194,8 +2199,13 @@
   --text-9xl-8xl-clamp-xl-2xl: clamp(6rem, calc(8rem - 0.1250 * (100vw - 80rem)), 8rem);
   --text-9xl-8xl-clamp-xl-2xl--line-height: clamp(6rem, calc(8rem - 0.1250 * (100vw - 80rem)), 8rem);
 
-  /* spacing */
-
+  /* Spacing */
+  --spacing-112: 28rem;
+  --spacing-128: 32rem;
+  --spacing-144: 36rem;
+  --spacing-160: 40rem;
+  --spacing-176: 44rem;
+  --spacing-192: 48rem;
   --spacing-0-1-clamp: clamp(0rem, calc(0rem + 0.0063 * (100vw - 40rem)), 0.25rem);
   --spacing-0-1-clamp-2xs-xs: clamp(0rem, calc(0rem + 0.0313 * (100vw - 24rem)), 0.25rem);
   --spacing-0-1-clamp-xs-sm: clamp(0rem, calc(0rem + 0.0313 * (100vw - 32rem)), 0.25rem);

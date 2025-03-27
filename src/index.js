@@ -105,10 +105,22 @@ const header = `/**
 
 @theme inline {
 
+  /* Breakpoints */
+
+  --breakpoint-2xs: 24rem;
+  --breakpoint-xs: 32rem;
+
   /* text */
 `;
 
-const divider = `\n  /* spacing */\n`;
+const divider = `
+  /* Spacing */
+  --spacing-112: 28rem;
+  --spacing-128: 32rem;
+  --spacing-144: 36rem;
+  --spacing-160: 40rem;
+  --spacing-176: 44rem;
+  --spacing-192: 48rem;`;
 
 const footer = `}\n`;
 
