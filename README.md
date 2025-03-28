@@ -44,7 +44,7 @@ Structure: `<property>-<value1>-<value2>-clamp-<breakpoint1>-<breakpoint2>`
 - The breakpoints are the Tailwind breakpoints you want to clamp between. If you only specify one breakpoint, the other breakpoint will be the default value. The default values are `sm` for breakpoint1 and `xl` for breakpoint2.
 - Classes were the values are the same or the breakpoints are the same will not be generated.
 
-There is also extra variants for the following values and breakpoints:
+There is also extra variants added with the following values and breakpoints:
 
 ```css
   /* Breakpoints */
@@ -60,10 +60,22 @@ There is also extra variants for the following values and breakpoints:
   --spacing-192: 48rem;
 ```
 
-So you can use larger values for spacing and smaller breakpoints if you want to.
+So you can use larger values for spacing and smaller breakpoints if you want to (You do not have to define these in your own config as they are included in the plugin).
+
+### Tailwind merge
+
+The plugin also has a plugin for tailwind-merge. It can be added like this:
+
+```typescript
+import { extendTailwindMerge } from 'tailwind-merge';
+import { withClamp } from 'tw-clamp-css/merge';
+
+const twMerge = extendTailwindMerge(withClamp);
+```
 
 ## References
 
+- [tailwind-merge](https://github.com/dcastil/tailwind-merge)
 - [fluid-tailwind](https://github.com/barvian/fluid-tailwind)
 - [tw-animate-css](https://github.com/jamiebuilds/tailwindcss-animate)
 - [tailwindcss-animate](https://github.com/jamiebuilds/tailwindcss-animate)
