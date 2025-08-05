@@ -31,7 +31,7 @@ npm install -D tw-clamp-css # Or use another package manager
 
 Then add the following at the top of your `app.css` or `globals.css` file:
 
-### Static Version
+### Dynamic Version
 
 ```css
 @plugin "tw-clamp-css/dynamic";
