@@ -41,7 +41,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "pnpx @tailwindcss/cli -i ./src/static/tw-clamp.css -o ./dist/static/tw-clamp.css -m && pnpx esbuild src/static/merge.js --bundle --outfile=dist/static/merge.mjs --format=esm --minify && pnpx esbuild src/static/merge.js --bundle --outfile=dist/static/merge.cjs --format=cjs --minify && cp src/static/merge.d.ts dist/static/merge.d.ts",
+    "build": "rm -rf dist && mkdir -p dist/static dist/dynamic && pnpx @tailwindcss/cli -i ./src/static/tw-clamp.css -o ./dist/static/tw-clamp.css -m && pnpx esbuild src/static/merge.js --bundle --outfile=dist/static/merge.mjs --format=esm --minify && pnpx esbuild src/static/merge.js --bundle --outfile=dist/static/merge.cjs --format=cjs --minify && cp src/static/merge.d.ts dist/static/merge.d.ts && pnpx esbuild src/dynamic/index.js --bundle --outfile=dist/dynamic/index.mjs --format=esm --minify && pnpx esbuild src/dynamic/index.js --bundle --outfile=dist/dynamic/index.cjs --format=cjs --minify && cp src/dynamic/index.d.ts dist/dynamic/index.d.ts && pnpx esbuild src/dynamic/merge.js --bundle --outfile=dist/dynamic/merge.mjs --format=esm --minify && pnpx esbuild src/dynamic/merge.js --bundle --outfile=dist/dynamic/merge.cjs --format=cjs --minify && cp src/dynamic/merge.d.ts dist/dynamic/merge.d.ts",
     "generate-css": "node ./src/static/index.js"
   },
   "peerDependencies": {
