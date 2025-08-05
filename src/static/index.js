@@ -279,4 +279,4 @@ const content = [
   footer
 ].join('\n');
 
-fs.writeFileSync('./src/tw-clamp.css', content, 'utf8');
+fs.writeFileSync('./src/static/tw-clamp.css', content, 'utf8');

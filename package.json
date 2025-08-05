@@ -20,20 +20,29 @@
     "url": "https://github.com/michaelbrusegard"
   },
   "exports": {
-    ".": "./dist/tw-clamp.css",
-    "./merge": {
-      "types": "./dist/merge.d.ts",
-      "import": "./dist/merge.mjs",
-      "require": "./dist/merge.cjs"
+    "./static": "./dist/static/tw-clamp.css",
+    "./static/merge": {
+      "types": "./dist/static/merge.d.ts",
+      "import": "./dist/static/merge.mjs",
+      "require": "./dist/static/merge.cjs"
+    },
+    "./dynamic": {
+      "types": "./dist/dynamic/index.d.ts",
+      "import": "./dist/dynamic/index.mjs",
+      "require": "./dist/dynamic/index.cjs"
+    },
+    "./dynamic/merge": {
+      "types": "./dist/dynamic/merge.d.ts",
+      "import": "./dist/dynamic/merge.mjs",
+      "require": "./dist/dynamic/merge.cjs"
     }
   },
-  "main": "./dist/tw-clamp.css",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "pnpx @tailwindcss/cli -i ./src/tw-clamp.css -o ./dist/tw-clamp.css -m && pnpx esbuild src/merge.js --bundle --outfile=dist/merge.mjs --format=esm --minify && pnpx esbuild src/merge.js --bundle --outfile=dist/merge.cjs --format=cjs --minify && cp src/merge.d.ts dist/merge.d.ts",
-    "generate": "node ./src/index.js"
+    "build": "pnpx @tailwindcss/cli -i ./src/static/tw-clamp.css -o ./dist/static/tw-clamp.css -m && pnpx esbuild src/static/merge.js --bundle --outfile=dist/static/merge.mjs --format=esm --minify && pnpx esbuild src/static/merge.js --bundle --outfile=dist/static/merge.cjs --format=cjs --minify && cp src/static/merge.d.ts dist/static/merge.d.ts",
+    "generate-css": "node ./src/static/index.js"
   },
   "peerDependencies": {
     "tailwind-merge": "^3.0.2",
