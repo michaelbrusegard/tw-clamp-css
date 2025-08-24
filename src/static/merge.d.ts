@@ -1,7 +1,8 @@
 import type { Config } from "tailwind-merge";
 
-declare function withClamp(
-  prevConfig: Config,
-): Config;
-
-export default withClamp;
+export declare function withClamp<
+  ClassGroupIds extends string,
+  ThemeGroupIds extends string,
+>(
+  prevConfig: Config<ClassGroupIds, ThemeGroupIds>,
+): Config<ClassGroupIds, ThemeGroupIds>;
