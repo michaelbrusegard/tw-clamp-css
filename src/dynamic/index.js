@@ -94,6 +94,7 @@ const clampPlugin = plugin(function ({ matchUtilities, theme }) {
           right: "right",
           bottom: "bottom",
           left: "left",
+          size: "size",
         };
 
         const property = properties[type];
@@ -114,6 +115,13 @@ const clampPlugin = plugin(function ({ matchUtilities, theme }) {
 
         const result = isNegative ? `-${clampValue}` : clampValue;
 
+        if (type === 'size') {
+          return {
+            width: result,
+            height: result,
+          };
+        }
+
         if (type === 'px' || type === 'mx' || type === 'inset-x') {
           const secondProperty = type === 'px' ? 'padding-right' : (type === 'mx' ? 'margin-right' : 'right');
           return {
@@ -133,18 +141,6 @@ const clampPlugin = plugin(function ({ matchUtilities, theme }) {
         return {
           [property]: result,
         };
-      },
-    },
-    {
-      values: {
-        ...Object.keys(theme("fontSize")).reduce(
-          (acc, key) => ({ ...acc, [`text-${key}`]: key }),
-          {}
-        ),
-        ...Object.keys(theme("spacing")).reduce(
-          (acc, key) => ({ ...acc, [`spacing-${key}`]: key }),
-          {}
-        ),
       },
     }
   );
