@@ -28,8 +28,8 @@ const clampPlugin = plugin(function ({ matchUtilities, theme }) {
         const spacing = theme("spacing");
         const breakpoints = theme("screens");
 
-        const minBreakpoint = parts[4] ? breakpoints[parts[4]] : breakpoints.xl;
-        const maxBreakpoint = parts[5] ? breakpoints[parts[5]] : breakpoints['2xl'];
+        const minBreakpoint = parts[4] ? breakpoints[parts[4]] : breakpoints.sm;
+        const maxBreakpoint = parts[5] ? breakpoints[parts[5]] : breakpoints.xl;
 
         if (type === "text") {
           const minSize = fontSizes[min][0];
